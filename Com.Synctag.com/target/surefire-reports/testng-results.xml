@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Add_account_Suite" duration-ms="643524" started-at="2018-04-26T11:27:56Z" finished-at="2018-04-26T11:38:39Z">
+    <groups>
+    </groups>
+    <test name="Social_Media_Mail" duration-ms="643524" started-at="2018-04-26T11:27:56Z" finished-at="2018-04-26T11:38:39Z">
+      <class name="module_combine.Verify_Mails_with_Reports">
+        <test-method status="PASS" signature="setUP()[pri:0, instance:module_combine.Verify_Mails_with_Reports@48140564]" name="setUP" is-config="true" duration-ms="15662" started-at="2018-04-26T17:01:35Z" finished-at="2018-04-26T17:01:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method status="PASS" signature="verify_Outlook_login()[pri:0, instance:module_combine.Verify_Mails_with_Reports@48140564]" name="verify_Outlook_login" duration-ms="211888" started-at="2018-04-26T17:01:50Z" finished-at="2018-04-26T17:05:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Outlook_login -->
+        <test-method status="PASS" signature="closeApplicationbrwoser()[pri:0, instance:module_combine.Verify_Mails_with_Reports@48140564]" name="closeApplicationbrwoser" is-config="true" duration-ms="852" started-at="2018-04-26T17:05:22Z" finished-at="2018-04-26T17:05:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplicationbrwoser -->
+      </class> <!-- module_combine.Verify_Mails_with_Reports -->
+      <class name="module_combine.Social_addaccoounts">
+        <test-method status="PASS" signature="setUP()[pri:0, instance:module_combine.Social_addaccoounts@880ec60]" name="setUP" is-config="true" duration-ms="11579" started-at="2018-04-26T17:05:23Z" finished-at="2018-04-26T17:05:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method status="PASS" signature="socialsynctag()[pri:0, instance:module_combine.Social_addaccoounts@880ec60]" name="socialsynctag" duration-ms="183877" started-at="2018-04-26T17:05:35Z" finished-at="2018-04-26T17:08:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- socialsynctag -->
+        <test-method status="PASS" signature="closeApplicationbrwoser()[pri:0, instance:module_combine.Social_addaccoounts@880ec60]" name="closeApplicationbrwoser" is-config="true" duration-ms="648" started-at="2018-04-26T17:08:39Z" finished-at="2018-04-26T17:08:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplicationbrwoser -->
+      </class> <!-- module_combine.Social_addaccoounts -->
+      <class name="module_combine.Verify_Media_with_Reports">
+        <test-method status="PASS" signature="setUP()[pri:0, instance:module_combine.Verify_Media_with_Reports@3f3afe78]" name="setUP" is-config="true" duration-ms="29373" started-at="2018-04-26T16:57:56Z" finished-at="2018-04-26T16:58:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method status="PASS" signature="verify_Media_account()[pri:0, instance:module_combine.Verify_Media_with_Reports@3f3afe78]" name="verify_Media_account" duration-ms="187246" started-at="2018-04-26T16:58:25Z" finished-at="2018-04-26T17:01:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Media_account -->
+        <test-method status="PASS" signature="closeApplicationbrwoser()[pri:0, instance:module_combine.Verify_Media_with_Reports@3f3afe78]" name="closeApplicationbrwoser" is-config="true" duration-ms="2376" started-at="2018-04-26T17:01:32Z" finished-at="2018-04-26T17:01:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplicationbrwoser -->
+      </class> <!-- module_combine.Verify_Media_with_Reports -->
+    </test> <!-- Social_Media_Mail -->
+  </suite> <!-- Add_account_Suite -->
+</testng-results>

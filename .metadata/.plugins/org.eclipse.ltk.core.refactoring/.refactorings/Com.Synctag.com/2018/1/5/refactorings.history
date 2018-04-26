@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;LoginPage.java&apos; to &apos;Com.Synctag.com/src/test/java/page&apos;&#x0D;&#x0A;- Original project: &apos;Com.Synctag.com&apos;&#x0D;&#x0A;- Destination element: &apos;Com.Synctag.com/src/test/java/page&apos;&#x0D;&#x0A;- Original element: &apos;page.LoginPage.java&apos;" description="Copy compilation unit" destination="/src\/test\/java&lt;page" element1="/src\/test\/java&lt;page{LoginPage.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1517222170514" units="1" version="1.0"/>
+</session>

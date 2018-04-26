@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [AddAccounts_reports]">
+  <test name="Modules(failed)">
+    <classes>
+      <class name="module_testcases.Social_addaccoounts">
+        <methods>
+          <include name="setUP"/>
+          <include name="socialsynctag"/>
+          <include name="closeApplicationbrwoser"/>
+        </methods>
+      </class> <!-- module_testcases.Social_addaccoounts -->
+      <class name="module_testcases.Verify_Media_with_Reports">
+        <methods>
+          <include name="verify_Media_account"/>
+          <include name="setUP"/>
+          <include name="closeApplicationbrwoser"/>
+        </methods>
+      </class> <!-- module_testcases.Verify_Media_with_Reports -->
+      <class name="module_testcases.Verify_Mails_with_Reports">
+        <methods>
+          <include name="verify_Outlook_login"/>
+          <include name="closeApplicationbrwoser"/>
+          <include name="setUP"/>
+        </methods>
+      </class> <!-- module_testcases.Verify_Mails_with_Reports -->
+    </classes>
+  </test> <!-- Modules(failed) -->
+</suite> <!-- Failed suite [AddAccounts_reports] -->

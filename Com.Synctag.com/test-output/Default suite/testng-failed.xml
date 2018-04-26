@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="testcase_media.Verify_Media_with_Reports">
+        <methods>
+          <include name="closeApplicationbrwoser"/>
+          <include name="verify_Media_account"/>
+          <include name="setUP"/>
+        </methods>
+      </class> <!-- testcase_media.Verify_Media_with_Reports -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

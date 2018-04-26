@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="224498" started-at="2018-04-25T11:54:09Z" finished-at="2018-04-25T11:57:54Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="224498" started-at="2018-04-25T11:54:09Z" finished-at="2018-04-25T11:57:54Z">
+      <class name="testcases_mail.Verify_Mails_with_Reports">
+        <test-method status="PASS" signature="setUP()[pri:0, instance:testcases_mail.Verify_Mails_with_Reports@1b604f19]" name="setUP" is-config="true" duration-ms="15509" started-at="2018-04-25T17:24:09Z" finished-at="2018-04-25T17:24:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method status="PASS" signature="verify_Outlook_login()[pri:0, instance:testcases_mail.Verify_Mails_with_Reports@1b604f19]" name="verify_Outlook_login" duration-ms="208021" started-at="2018-04-25T17:24:25Z" finished-at="2018-04-25T17:27:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Outlook_login -->
+        <test-method status="PASS" signature="closeApplicationbrwoser()[pri:0, instance:testcases_mail.Verify_Mails_with_Reports@1b604f19]" name="closeApplicationbrwoser" is-config="true" duration-ms="944" started-at="2018-04-25T17:27:53Z" finished-at="2018-04-25T17:27:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplicationbrwoser -->
+      </class> <!-- testcases_mail.Verify_Mails_with_Reports -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
