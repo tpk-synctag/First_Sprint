@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;pages_Socail.Queue&apos; to &apos;Queue_Menu&apos;&#x0D;&#x0A;- Original project: &apos;Com.Synctag.com&apos;&#x0D;&#x0A;- Original element: &apos;pages_Socail.Queue&apos;&#x0D;&#x0A;- Renamed element: &apos;pages_Socail.Queue_Menu&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Queue&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/test\/java&lt;pages_Socail{Queue.java[Queue" matchStrategy="1" name="Queue_Menu" qualified="false" references="true" similarDeclarations="false" stamp="1528719228404" textual="false" version="1.0"/>
+</session>

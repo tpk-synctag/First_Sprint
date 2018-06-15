@@ -1,0 +1,83 @@
+package pages_Socail;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class Queue 
+{
+
+	WebDriver driver;
+	
+	public Queue(WebDriver lodriver)
+	{
+		
+		this.driver=lodriver;
+		
+	}
+	
+		
+	@FindBy(xpath="//*[@id='main-menu']/li[6]")WebElement click_queue;
+	
+	
+	@FindBy(xpath="//*[@id='queueTabs']/li[2]")WebElement click_past_schedule;
+	
+	@FindBy(xpath="//*[@id='queueTabs']/li[1]")WebElement click_pending_schedule;
+	
+	
+	@FindBy(xpath="//*[@id='content']/div/div/div/ul/li[4]/a") WebElement click_fb;
+	@FindBy(xpath="//*[@id='content']/div/div/div/ul/li[4]/ul/li[2]/a") WebElement click_fb_profile; 
+	
+	@FindBy(xpath="//*[@id='content']/div/div/div/ul/li[5]/a") WebElement click_twiter;
+	@FindBy(xpath="//*[@id='content']/div/div/div/ul/li[5]/ul/li[2]/a") WebElement click_twi_profile;
+	
+	@FindBy(xpath="//*[@id='content']/div/div/div/ul/li[10]") WebElement click_calender_view;
+	
+	
+	
+	
+	public void click_Queue() throws Exception
+	{
+		click_queue.click();
+	}
+	
+	
+	
+	public void queue_twitter() throws Exception
+	{
+		click_twiter.click();
+		Thread.sleep(5000);
+		click_twi_profile.click();
+		Thread.sleep(5000);
+		click_pending_schedule.click();
+		Thread.sleep(5000);
+		click_past_schedule.click();
+		Thread.sleep(5000);
+		click_calender_view.click();
+		Thread.sleep(5000);
+		
+		
+		
+	}
+	
+	public void queue_facebook() throws Exception
+	{
+		click_fb.click();
+		Thread.sleep(5000);
+		click_fb_profile.click();
+		Thread.sleep(5000);
+		click_calender_view.click();
+		Thread.sleep(5000);
+		click_past_schedule.click();
+		
+	}
+	
+	public void calender_view()
+	{
+		
+		click_calender_view.click();
+		
+	}
+	
+	
+}

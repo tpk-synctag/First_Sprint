@@ -1,0 +1,30 @@
+package pages_Socail;
+
+import org.openqa.selenium.WebDriver;
+
+public class Queue 
+{
+
+	WebDriver driver;
+	
+	public Queue(WebDriver lodriver)
+	{
+		
+		this.driver=lodriver;
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

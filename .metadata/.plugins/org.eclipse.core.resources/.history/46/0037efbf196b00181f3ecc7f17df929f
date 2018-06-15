@@ -1,0 +1,27 @@
+package pages_Socail;
+
+import org.openqa.selenium.WebDriver;
+
+public class Time_Line_Feeds 
+{
+
+	WebDriver driver;
+	
+	public Time_Line_Feeds(WebDriver ldriver)
+	{
+		this.driver=ldriver;
+		
+	}
+	
+	
+	public void user_time_line()
+	{
+		
+		
+		
+	}
+	
+	
+	
+	
+}

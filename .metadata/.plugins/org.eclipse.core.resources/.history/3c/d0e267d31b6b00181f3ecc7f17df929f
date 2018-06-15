@@ -1,0 +1,47 @@
+package pages_Socail;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class Time_Line_Feeds 
+{
+
+	WebDriver driver;
+	
+	public Time_Line_Feeds(WebDriver ldriver)
+	{
+		this.driver=ldriver;
+		
+	}
+	
+	
+	@FindBy(xpath="//*[@id='main-menu']/li[3]/a")WebElement click_timeline;
+	
+	@FindBy(xpath="//*[@id='content']/div/div/div/ul/li[9]")WebElement click_tmsync_casecade;
+	@FindBy(xpath="//*[@id='content']/div/div/div/ul/li[7]")WebElement click_tm_filter;
+	@FindBy(xpath="//*[@id='content']/div/div/div/ul/li[7]/ul/li[1]")WebElement click_tm_Images;
+	@FindBy(xpath="//*[@id='content']/div/div/div/ul/li[7]/ul/li[2]")WebElement click_tm_video;
+	@FindBy(xpath="//*[@id='content']/div/div/div/ul/li[7]/ul/li[3]")WebElement click_tm_text;
+	@FindBy(xpath="//*[@id='content']/div/div/div/ul/li[7]/ul/li[4]")WebElement click_tm_link;
+	@FindBy(xpath="//*[@id='content']/div/div/div/ul/li[7]/ul/li[5]")WebElement click_tm_all;
+	
+	
+	@FindBy(xpath="")WebElement click_timeline;
+	@FindBy(xpath="")WebElement click_timeline;
+	@FindBy(xpath="")WebElement click_timeline;
+	
+	
+	
+	
+	public void user_time_line()
+	{
+		
+		
+		
+	}
+	
+	
+	
+	
+}
