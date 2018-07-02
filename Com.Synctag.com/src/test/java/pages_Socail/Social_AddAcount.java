@@ -73,7 +73,11 @@ public class Social_AddAcount
 			
 			@FindBy(xpath="//*[@id='content']/div/div/div/ul/li[8]") WebElement click_casecade_style;
 													
-	
+	// Friends and followers
+			
+			
+			
+			
 	
 	public void seleScial() throws InterruptedException 
 	{
@@ -154,7 +158,7 @@ public class Social_AddAcount
 	}
 	
 	
-	public void click_home() throws Exception 
+	public void click_home_Fbfilter() throws Exception  // Facebook account selection and filter 
 	{
 		click_home.click();
 		Thread.sleep(5000);
@@ -162,24 +166,36 @@ public class Social_AddAcount
 		Thread.sleep(5000);
 		click_fb_profile.click();
 		Thread.sleep(5000);
+	}
+	
+	public void click_home_twetfilter() throws Exception  // Twitter Account selection and filter
+	
+	{
+			click_twiter.click();
+			Thread.sleep(5000);
+			click_twi_profile.click();
+			Thread.sleep(5000);
+			
+	}
 		
-		click_twiter.click();
-		Thread.sleep(5000);
-		click_twi_profile.click();
-		Thread.sleep(5000);
 		
 		//click_inst.click();
 		//Thread.sleep(5000);
 		//click_inst_profile.click();
 		//Thread.sleep(5000);
-		
+	
+	public void click_home_synclogo() throws Exception  // Home feed Sync Logo clicking 
+	{
+	
 		click_sync_logo.click();
 		Thread.sleep(5000);		
 		click_casecade_style.click();					
 		Thread.sleep(5000);
-		
-			
+	
 	}
+	
+	
+	
 	
 	
 }

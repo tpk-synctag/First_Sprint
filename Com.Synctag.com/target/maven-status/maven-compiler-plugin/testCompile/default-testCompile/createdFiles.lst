@@ -1,5 +1,6 @@
 module_combine\Verify_Mails_with_Reports.class
 testcases_mail\VerifyOutlook_And_Others_Account.class
+pages_Socail\Social_Filter.class
 page_mail\HomePages.class
 module_combine\Verify_Media_with_Reports.class
 excelconfiguration\InputDataConfiguration.class

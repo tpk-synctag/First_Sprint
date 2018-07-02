@@ -72,11 +72,18 @@ public class Social_addaccoounts
 			soc.linkedin(DataProviderFactory.getexcel().getdata(2, 3, 0), DataProviderFactory.getexcel().getdata(2, 3, 1));
 			test.log(LogStatus.PASS, "--------------- LinkedIn Account added successfully ---------------------");
 			Thread.sleep(6000);
-			soc.click_home();
+			//soc.click_home();;
 			test.log(LogStatus.INFO, "------------------ All the Home Feeds Loaded Successfully --------------------");		
 			Thread.sleep(6000);
 	
+			//Social_Filter fil=PageFactory.initElements(driver, Social_Filter.class);
+			//fil.click_filters();
+			//test.log(LogStatus.INFO, "------------ Scroll Successfully ------------------");
+			
+			
+			
 	}
+	
 
 	@AfterMethod
 	public void closeApplicationbrwoser()

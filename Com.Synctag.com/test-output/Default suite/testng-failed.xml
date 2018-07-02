@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testcase_media.Verify_Media_with_Reports">
+      <class name="testcase_After_account_added.Social_after_added_Accounts">
         <methods>
-          <include name="closeApplicationbrwoser"/>
-          <include name="verify_Media_account"/>
           <include name="setUP"/>
+          <include name="socialsynctag"/>
+          <include name="closeApplicationbrwoser"/>
         </methods>
-      </class> <!-- testcase_media.Verify_Media_with_Reports -->
+      </class> <!-- testcase_After_account_added.Social_after_added_Accounts -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

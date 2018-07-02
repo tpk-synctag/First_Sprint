@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.apache.poi.xssf.usermodel.XSSFWorkbook"/>
-<fullyQualifiedTypeName name="org.apache.poi.xssf.usermodel.XSSFSheet"/>
-<fullyQualifiedTypeName name="excelconfiguration.Configdataprovider"/>
-<fullyQualifiedTypeName name="excelconfiguration.Exceldataconfiguration"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.ie.InternetExplorerDriver"/>
-<fullyQualifiedTypeName name="page.Add_Mail_Account_Page"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.opera.OperaDriver"/>
-<fullyQualifiedTypeName name="page.Add_All_Mail_Account_Page"/>
 <fullyQualifiedTypeName name="java.io.FileInputStream"/>
 <fullyQualifiedTypeName name="java.util.Properties"/>
 <fullyQualifiedTypeName name="excelconfiguration.InputDataConfiguration"/>
@@ -39,9 +31,6 @@
 <fullyQualifiedTypeName name="page.HomePages"/>
 <fullyQualifiedTypeName name="page.LoginPage"/>
 <fullyQualifiedTypeName name="org.testng.annotations.AfterMethod"/>
-<fullyQualifiedTypeName name="pages_Socail.Social_AddAcount"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.support.FindBy"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.Keys"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.WebDriverWait"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
@@ -50,13 +39,25 @@
 <fullyQualifiedTypeName name="org.openqa.selenium.support.FindAll"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.support.FindBys"/>
 <fullyQualifiedTypeName name="pages_Socail.Home_click"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
 <fullyQualifiedTypeName name="org.testng.annotations.Test"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.Alert"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.interactions.Actions"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.support.PageFactory"/>
 <fullyQualifiedTypeName name="pages_media.Media_pages"/>
 <fullyQualifiedTypeName name="page_mail.Add_All_Mail_Account_Page"/>
-<fullyQualifiedTypeName name="com.relevantcodes.extentreports.LogStatus"/>
 <fullyQualifiedTypeName name="factory.DataProviderFactory"/>
+<fullyQualifiedTypeName name="com.relevantcodes.extentreports.LogStatus"/>
+<fullyQualifiedTypeName name="pages_Socail.Social_Filter"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.JavascriptExecutor"/>
+<fullyQualifiedTypeName name="pages_Socail.Social_AddAcount"/>
+<fullyQualifiedTypeName name="pages_Socail.Friends_And_Followers"/>
+<fullyQualifiedTypeName name="pages_Socail.Time_Line_Feeds"/>
+<fullyQualifiedTypeName name="java.util.Queue"/>
+<fullyQualifiedTypeName name="pages_Socail.Queue_Menu"/>
+<fullyQualifiedTypeName name="pages_Socail.MailBox"/>
+<fullyQualifiedTypeName name="pages_Socail.Mentions"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.support.FindBy"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.support.PageFactory"/>
+<fullyQualifiedTypeName name="pages_Socail.Archive"/>
 </qualifiedTypeNameHistroy>

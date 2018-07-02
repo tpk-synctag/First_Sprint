@@ -14,7 +14,10 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import page_mail.HomePages;
 import page_mail.LoginPage;
+import pages_Socail.Archive;
 import pages_Socail.Friends_And_Followers;
+import pages_Socail.MailBox;
+import pages_Socail.Mentions;
 import pages_Socail.Queue_Menu;
 import pages_Socail.Social_AddAcount;
 import pages_Socail.Social_Filter;
@@ -120,17 +123,25 @@ public class Social_after_added_Accounts
 			*/
 				
 			// Queue Menu 
-			/*
-			Queue_Menu ques=PageFactory.initElements(driver, Queue_Menu.class);
+			
+			/*Queue_Menu ques=PageFactory.initElements(driver, Queue_Menu.class);
 			ques.click_Queuemenu();
 			Thread.sleep(5000);
 			ques.queue_facebook();
 			Thread.sleep(5000);
 			ques.queue_twitter();
+			Thread.sleep(5000);*/
+			
+			/*MailBox mailbox=PageFactory.initElements(driver, MailBox.class);
+			mailbox.mailbox();
 			Thread.sleep(5000);
 			*/
+				
+			/*Mentions mention=PageFactory.initElements(driver, Mentions.class);
+			mention.mentionfunction();*/
 			
-					
+			Archive arch=PageFactory.initElements(driver, Archive.class);
+			arch.archivefunctions();
 			
 			
 	}

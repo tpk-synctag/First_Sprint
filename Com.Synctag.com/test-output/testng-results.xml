@@ -1,25 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="224498" started-at="2018-04-25T11:54:09Z" finished-at="2018-04-25T11:57:54Z">
+  <suite name="Default suite" duration-ms="90128" started-at="2018-06-28T19:25:39Z" finished-at="2018-06-28T19:27:09Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="224498" started-at="2018-04-25T11:54:09Z" finished-at="2018-04-25T11:57:54Z">
-      <class name="testcases_mail.Verify_Mails_with_Reports">
-        <test-method status="PASS" signature="setUP()[pri:0, instance:testcases_mail.Verify_Mails_with_Reports@1b604f19]" name="setUP" is-config="true" duration-ms="15509" started-at="2018-04-25T17:24:09Z" finished-at="2018-04-25T17:24:25Z">
+    <test name="Default test" duration-ms="90128" started-at="2018-06-28T19:25:39Z" finished-at="2018-06-28T19:27:09Z">
+      <class name="testcase_After_account_added.Social_after_added_Accounts">
+        <test-method status="PASS" signature="setUP()[pri:0, instance:testcase_After_account_added.Social_after_added_Accounts@1b604f19]" name="setUP" is-config="true" duration-ms="16302" started-at="2018-06-29T00:55:39Z" finished-at="2018-06-29T00:55:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUP -->
-        <test-method status="PASS" signature="verify_Outlook_login()[pri:0, instance:testcases_mail.Verify_Mails_with_Reports@1b604f19]" name="verify_Outlook_login" duration-ms="208021" started-at="2018-04-25T17:24:25Z" finished-at="2018-04-25T17:27:53Z">
+        <test-method status="FAIL" signature="socialsynctag()[pri:0, instance:testcase_After_account_added.Social_after_added_Accounts@1b604f19]" name="socialsynctag" duration-ms="72068" started-at="2018-06-29T00:55:55Z" finished-at="2018-06-29T00:57:07Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: Element <li ng-show="!Refreshing" ng-repeat="provider in ProviderList" ng-class="{ 'dropdown click_active': SelectedProvider==provider.Name }" ng-if="!provider.IsHidden" class="dropdown ng-scope" aria-hidden="false">...</li> is not clickable at point (536, 37). Other element would receive the click: <div class="col-sm-9 col-xs-9 menu-part">...</div>
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'USER-PC', ip: '172.18.18.219', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 3dcdd6c00115ae87dad0cb5507988994]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <li ng-show="!Refreshing" ng-repeat="provider in ProviderList" ng-class="{ 'dropdown click_active': SelectedProvider==provider.Name }" ng-if="!provider.IsHidden" class="dropdown ng-scope" aria-hidden="false">...</li> is not clickable at point (536, 37). Other element would receive the click: <div class="col-sm-9 col-xs-9 menu-part">...</div>
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'USER-PC', ip: '172.18.18.219', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 3dcdd6c00115ae87dad0cb5507988994
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at pages_Socail.Archive.archivefunctions(Archive.java:58)
+	at testcase_After_account_added.Social_after_added_Accounts.socialsynctag(Social_after_added_Accounts.java:144)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_Outlook_login -->
-        <test-method status="PASS" signature="closeApplicationbrwoser()[pri:0, instance:testcases_mail.Verify_Mails_with_Reports@1b604f19]" name="closeApplicationbrwoser" is-config="true" duration-ms="944" started-at="2018-04-25T17:27:53Z" finished-at="2018-04-25T17:27:54Z">
+        </test-method> <!-- socialsynctag -->
+        <test-method status="PASS" signature="closeApplicationbrwoser()[pri:0, instance:testcase_After_account_added.Social_after_added_Accounts@1b604f19]" name="closeApplicationbrwoser" is-config="true" duration-ms="1664" started-at="2018-06-29T00:57:08Z" finished-at="2018-06-29T00:57:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplicationbrwoser -->
-      </class> <!-- testcases_mail.Verify_Mails_with_Reports -->
+      </class> <!-- testcase_After_account_added.Social_after_added_Accounts -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
