@@ -2,38 +2,38 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="90128" started-at="2018-06-28T19:25:39Z" finished-at="2018-06-28T19:27:09Z">
+  <suite name="Default suite" duration-ms="547293" started-at="2018-07-10T05:49:43Z" finished-at="2018-07-10T05:58:50Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="90128" started-at="2018-06-28T19:25:39Z" finished-at="2018-06-28T19:27:09Z">
+    <test name="Default test" duration-ms="547293" started-at="2018-07-10T05:49:43Z" finished-at="2018-07-10T05:58:50Z">
       <class name="testcase_After_account_added.Social_after_added_Accounts">
-        <test-method status="PASS" signature="setUP()[pri:0, instance:testcase_After_account_added.Social_after_added_Accounts@1b604f19]" name="setUP" is-config="true" duration-ms="16302" started-at="2018-06-29T00:55:39Z" finished-at="2018-06-29T00:55:55Z">
+        <test-method status="PASS" signature="setUP()[pri:0, instance:testcase_After_account_added.Social_after_added_Accounts@1b604f19]" name="setUP" is-config="true" duration-ms="14888" started-at="2018-07-10T11:19:43Z" finished-at="2018-07-10T11:19:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUP -->
-        <test-method status="FAIL" signature="socialsynctag()[pri:0, instance:testcase_After_account_added.Social_after_added_Accounts@1b604f19]" name="socialsynctag" duration-ms="72068" started-at="2018-06-29T00:55:55Z" finished-at="2018-06-29T00:57:07Z">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method status="FAIL" signature="socialsynctag()[pri:0, instance:testcase_After_account_added.Social_after_added_Accounts@1b604f19]" name="socialsynctag" duration-ms="530618" started-at="2018-07-10T11:19:58Z" finished-at="2018-07-10T11:28:48Z">
+          <exception class="org.openqa.selenium.ElementNotVisibleException">
             <message>
-              <![CDATA[unknown error: Element <li ng-show="!Refreshing" ng-repeat="provider in ProviderList" ng-class="{ 'dropdown click_active': SelectedProvider==provider.Name }" ng-if="!provider.IsHidden" class="dropdown ng-scope" aria-hidden="false">...</li> is not clickable at point (536, 37). Other element would receive the click: <div class="col-sm-9 col-xs-9 menu-part">...</div>
+              <![CDATA[element not visible
   (Session info: chrome=67.0.3396.99)
   (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'USER-PC', ip: '172.18.18.219', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_151'
+System info: host: 'USER-PC', ip: '172.18.18.162', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_151'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
-Session ID: 3dcdd6c00115ae87dad0cb5507988994]]>
+Session ID: e07096656432a5310e601976e4071456]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <li ng-show="!Refreshing" ng-repeat="provider in ProviderList" ng-class="{ 'dropdown click_active': SelectedProvider==provider.Name }" ng-if="!provider.IsHidden" class="dropdown ng-scope" aria-hidden="false">...</li> is not clickable at point (536, 37). Other element would receive the click: <div class="col-sm-9 col-xs-9 menu-part">...</div>
+              <![CDATA[org.openqa.selenium.ElementNotVisibleException: element not visible
   (Session info: chrome=67.0.3396.99)
   (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'USER-PC', ip: '172.18.18.219', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_151'
+System info: host: 'USER-PC', ip: '172.18.18.162', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_151'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
-Session ID: 3dcdd6c00115ae87dad0cb5507988994
+Session ID: e07096656432a5310e601976e4071456
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -48,14 +48,13 @@ Session ID: 3dcdd6c00115ae87dad0cb5507988994
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at com.sun.proxy.$Proxy9.click(Unknown Source)
-	at pages_Socail.Archive.archivefunctions(Archive.java:58)
-	at testcase_After_account_added.Social_after_added_Accounts.socialsynctag(Social_after_added_Accounts.java:144)
+	at pages_Socail.Friends_And_Followers.frineds_and_Followers_facebook(Friends_And_Followers.java:101)
+	at testcase_After_account_added.Social_after_added_Accounts.socialsynctag(Social_after_added_Accounts.java:97)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -82,11 +81,11 @@ Session ID: 3dcdd6c00115ae87dad0cb5507988994
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.ElementNotVisibleException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- socialsynctag -->
-        <test-method status="PASS" signature="closeApplicationbrwoser()[pri:0, instance:testcase_After_account_added.Social_after_added_Accounts@1b604f19]" name="closeApplicationbrwoser" is-config="true" duration-ms="1664" started-at="2018-06-29T00:57:08Z" finished-at="2018-06-29T00:57:09Z">
+        <test-method status="PASS" signature="closeApplicationbrwoser()[pri:0, instance:testcase_After_account_added.Social_after_added_Accounts@1b604f19]" name="closeApplicationbrwoser" is-config="true" duration-ms="1731" started-at="2018-07-10T11:28:48Z" finished-at="2018-07-10T11:28:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplicationbrwoser -->

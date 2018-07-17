@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jun 29 00:55:39 IST 2018</td>
+<td>Started on:</td><td>Tue Jul 10 11:19:43 IST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>90 seconds (90128 ms)</td>
+<tr><td>Total time:</td><td>547 seconds (547293 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,15 +76,15 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='testcase_After_account_added.Social_after_added_Accounts.socialsynctag()'><b>socialsynctag</b><br>Test class: testcase_After_account_added.Social_after_added_Accounts</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Element &lt;li ng-show=&quot;!Refreshing&quot; ng-repeat=&quot;provider in ProviderList&quot; ng-class=&quot;{ &apos;dropdown click_active&apos;: SelectedProvider==provider.Name }&quot; ng-if=&quot;!provider.IsHidden&quot; class=&quot;dropdown ng-scope&quot; aria-hidden=&quot;false&quot;&gt;...&lt;/li&gt; is not clickable at point (536, 37). Other element would receive the click: &lt;div class=&quot;col-sm-9 col-xs-9 menu-part&quot;&gt;...&lt;/div&gt;
+<td><div><pre>org.openqa.selenium.ElementNotVisibleException: element not visible
   (Session info: chrome=67.0.3396.99)
   (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
-System info: host: &apos;USER-PC&apos;, ip: &apos;172.18.18.219&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_151&apos;
+System info: host: &apos;USER-PC&apos;, ip: &apos;172.18.18.162&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_151&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
-Session ID: 3dcdd6c00115ae87dad0cb5507988994
+Session ID: e07096656432a5310e601976e4071456
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -99,14 +99,13 @@ Session ID: 3dcdd6c00115ae87dad0cb5507988994
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at com.sun.proxy.$Proxy9.click(Unknown Source)
-	at pages_Socail.Archive.archivefunctions(Archive.java:58)
-	at testcase_After_account_added.Social_after_added_Accounts.socialsynctag(Social_after_added_Accounts.java:144)
+	at pages_Socail.Friends_And_Followers.frineds_and_Followers_facebook(Friends_And_Followers.java:101)
+	at testcase_After_account_added.Social_after_added_Accounts.socialsynctag(Social_after_added_Accounts.java:97)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -131,16 +130,16 @@ Session ID: 3dcdd6c00115ae87dad0cb5507988994
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1671590089", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1671590089'><pre>org.openqa.selenium.WebDriverException: unknown error: Element &lt;li ng-show=&quot;!Refreshing&quot; ng-repeat=&quot;provider in ProviderList&quot; ng-class=&quot;{ &apos;dropdown click_active&apos;: SelectedProvider==provider.Name }&quot; ng-if=&quot;!provider.IsHidden&quot; class=&quot;dropdown ng-scope&quot; aria-hidden=&quot;false&quot;&gt;...&lt;/li&gt; is not clickable at point (536, 37). Other element would receive the click: &lt;div class=&quot;col-sm-9 col-xs-9 menu-part&quot;&gt;...&lt;/div&gt;
+</pre></div><a href='#' onClick='toggleBox("stack-trace295304806", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace295304806'><pre>org.openqa.selenium.ElementNotVisibleException: element not visible
   (Session info: chrome=67.0.3396.99)
   (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
-System info: host: &apos;USER-PC&apos;, ip: &apos;172.18.18.219&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_151&apos;
+System info: host: &apos;USER-PC&apos;, ip: &apos;172.18.18.162&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_151&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\user\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
-Session ID: 3dcdd6c00115ae87dad0cb5507988994
+Session ID: e07096656432a5310e601976e4071456
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -155,14 +154,13 @@ Session ID: 3dcdd6c00115ae87dad0cb5507988994
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at com.sun.proxy.$Proxy9.click(Unknown Source)
-	at pages_Socail.Archive.archivefunctions(Archive.java:58)
-	at testcase_After_account_added.Social_after_added_Accounts.socialsynctag(Social_after_added_Accounts.java:144)
+	at pages_Socail.Friends_And_Followers.frineds_and_Followers_facebook(Friends_And_Followers.java:101)
+	at testcase_After_account_added.Social_after_added_Accounts.socialsynctag(Social_after_added_Accounts.java:97)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -188,7 +186,7 @@ Session ID: 3dcdd6c00115ae87dad0cb5507988994
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>72</td>
+<td>530</td>
 <td>testcase_After_account_added.Social_after_added_Accounts@1b604f19</td></tr>
 </table><p>
 </body>
