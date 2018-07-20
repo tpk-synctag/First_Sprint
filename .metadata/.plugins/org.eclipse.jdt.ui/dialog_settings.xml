@@ -40,8 +40,8 @@
 		<item value="11" key="INCLUDE_MASK"/>
 	</section>
 	<section name="completion_proposal_size">
-		<item value="600" key="size.y"/>
-		<item value="758" key="size.x"/>
+		<item value="589" key="size.y"/>
+		<item value="810" key="size.x"/>
 	</section>
 	<section name="JavaElementSearchActions">
 	</section>

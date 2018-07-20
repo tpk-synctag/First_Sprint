@@ -20,6 +20,7 @@ import pages_Socail.Queue_Menu;
 import pages_Socail.Social_AddAcount;
 import pages_Socail.Social_Filter;
 import pages_Socail.Time_Line_Feeds;
+import pages_Socail.Xplorer;
 import factory.Browserfactory;
 import factory.DataProviderFactory;
 
@@ -107,17 +108,16 @@ public class Social_after_added_Accounts
 			// Friends and Followers 
 			
 			try {
+				
 				Friends_And_Followers frnd_follow=PageFactory.initElements(driver, Friends_And_Followers.class );
-				frnd_follow.click_friends_Followers();
+				frnd_follow.click_friends_Followers_Fb();
 				Thread.sleep(5000);
-				frnd_follow.frineds_and_Followers_facebook();
-				Thread.sleep(5000);
-				frnd_follow.click_friends_Followers();
-				Thread.sleep(9000);
 				frnd_follow.friends_and_followers_twitter();
 				Thread.sleep(5000);
 				frnd_follow.twitter_syncpage_filter();
-				Thread.sleep(5000);
+				test.log(LogStatus.PASS, "----------- Synctag Friends and followers  working fine and Test cases Executed  successfully ------------------");
+				
+				
 			} 
 			catch (Exception e)
 			{
@@ -144,7 +144,10 @@ public class Social_after_added_Accounts
 				timeline.timeline_instagram();
 				timeline.filter_instgram_time_line();
 				Thread.sleep(5000);
-			
+ 
+				test.log(LogStatus.PASS, "----------- Synctag TimeLine working fine and Test cases Executed  successfully  ------------------");
+				
+				
 			}
 			catch (Exception e) 
 			{
@@ -156,12 +159,18 @@ public class Social_after_added_Accounts
 			
 			try {
 				Queue_Menu ques=PageFactory.initElements(driver, Queue_Menu.class);
+				
 				ques.click_Queuemenu();
 				Thread.sleep(5000);
+				
 				ques.queue_facebook();
 				Thread.sleep(5000);
+				
 				ques.queue_twitter();
 				Thread.sleep(5000);
+				
+				test.log(LogStatus.PASS, "----------- Synctag Queue working fine and Test cases Executed  successfully ------------------");
+				
 			}
 			catch (Exception e) 
 			{
@@ -172,9 +181,11 @@ public class Social_after_added_Accounts
 			
 			// MailBox 
 			try {
+				
 				MailBox mailbox=PageFactory.initElements(driver, MailBox.class);
 				mailbox.mailbox();
 				Thread.sleep(5000);
+				test.log(LogStatus.PASS, "----------- Synctag MailBox Functionality working fine and Test cases Executed  successfully ------------------");
 			}
 			catch (Exception e) 
 			{
@@ -189,19 +200,35 @@ public class Social_after_added_Accounts
 				
 				Mentions mention=PageFactory.initElements(driver, Mentions.class);
 				mention.mentionfunction();
+				test.log(LogStatus.PASS, "----------- Synctag Mentions working fine and Test cases Executed  successfully ------------------");
+				
 			}
 			catch (Exception e) 
 			{
 				System.out.println("The Mention Exceptio is :"+e.getMessage());
 			}
 			
-			//Archive 
+			//xplorer
+						
+			try {
+				
+				Xplorer xplor=PageFactory.initElements(driver, Xplorer.class);
+				xplor.xplorer_function();
+				
+			} 
+			catch (Exception e)
+			{
+				System.out.println("The Xlorer Exception is :"+e.getMessage());
+			}
+				
+			//Archive
 			
 			try 
 			{
 			
 				Archive arch=PageFactory.initElements(driver, Archive.class);
 				arch.archivefunctions();
+				test.log(LogStatus.PASS, "----------- Synctag Archive working fine and Test cases Executed  successfully ------------------");
 				
 			} 
 			catch (Exception e) 

@@ -17,7 +17,7 @@ public class Queue_Menu
 	}
 	
 		
-	@FindBy(xpath="//*[@id='main-menu']/li[6]")WebElement click_queue;
+	@FindBy(xpath="//*[@id='main-menu']/li[4]")WebElement click_queue;
 	
 	
 	@FindBy(xpath="//*[@id='queueTabs']/li[2]")WebElement click_past_schedule;

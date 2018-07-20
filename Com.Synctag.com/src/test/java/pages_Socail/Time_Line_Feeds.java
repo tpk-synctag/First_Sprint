@@ -16,7 +16,7 @@ public class Time_Line_Feeds
 	}
 	
 	
-	@FindBy(xpath="//*[@id='main-menu']/li[3]/a")WebElement click_timeline;
+	@FindBy(xpath="//*[@id='main-menu']/li[3]")WebElement click_timeline;
 	
 	@FindBy(xpath="//*[@id='content']/div/div/div/ul/li[9]")WebElement click_tmsync_casecade;
 	
@@ -37,7 +37,7 @@ public class Time_Line_Feeds
 	@FindBy(xpath="//*[@id='content']/div/div/div/ul/li[6]/a") WebElement click_inst;
 	@FindBy(xpath="//*[@id='content']/div/div/div/ul/li[6]/ul/li[2]/a") WebElement click_inst_profile;
 	
-	@FindBy(xpath="//*[@id='content']/div/div/div/ul/li[2]/a") WebElement click_sync_logo;
+	@FindBy(xpath="//*[@id='content']/div/div/div/ul/li[2]") WebElement click_sync_logo;
 	
 	@FindBy(xpath="//*[@id='content']/div/div/div/ul/li[8]") WebElement click_casecade_style;
 	
@@ -77,6 +77,8 @@ public class Time_Line_Feeds
 		click_timeline.click();
 		Thread.sleep(5000);
 		click_tmsync_casecade.click();
+		Thread.sleep(5000);
+		click_sync_logo.click();
 		Thread.sleep(5000);
 		click_tm_filter.click();
 		Thread.sleep(5000);

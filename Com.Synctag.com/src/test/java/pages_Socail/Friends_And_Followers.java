@@ -19,11 +19,11 @@ public class Friends_And_Followers
 		
 	}
 	
-	@FindBy(xpath="//*[@id='main-menu']/li[2]/a") WebElement click_Friends_Followers;  // click friends AND Followers
+	@FindBy(xpath="//*[@id='main-menu']/li[2]") WebElement click_Friends_Followers;  // click friends AND Followers  
 	
-	@FindBy(xpath="//*[@id='content']/div/div/div/ul/li[4]/a") WebElement click_FF_fb;
+	@FindBy(xpath="//*[@id='content']/div/div/div/ul/li[4]") WebElement click_FF_fb;
 	
-	@FindBy(xpath="//*[@id='content']/div/div/div/ul/li[4]/ul[1]/li[2]/a") WebElement click_FF_profile_Fb; // FF fb profile account seletion 
+	@FindBy(xpath="//*[@id='content']/div/div/div/ul/li[4]/ul[1]/li[2]") WebElement click_FF_profile_Fb; // FF fb profile account seletion 
 	
 	@FindBy(xpath="//*[@id='content']/section/div[1]/div[2]/div[4]/div[1]/a/div") WebElement click_FB_FF_profile;  // F F Synctag fb profile 
 		
@@ -33,9 +33,10 @@ public class Friends_And_Followers
 	
 	
 	// Twitter friends and followers
-	@FindBy(xpath="//*[@id='content']/div/div/div/ul/li[5]/a") WebElement click_twitter_account;  // Twitter account for Friends & followers
+		
+	@FindBy(xpath="//*[@id='content']/div/div/div/ul/li[5]") WebElement click_twitter_account;  // Twitter account for Friends & followers
 	
-	@FindBy(xpath="//*[@id='content']/div/div/div/ul/li[5]/ul[1]/li[3]/a") WebElement click_twitter_profile;  // Twitter account for Friends & followers
+	@FindBy(xpath="//*[@id='content']/div/div/div/ul/li[5]/ul[1]/li[2]") WebElement click_twitter_profile;  // Twitter account for Friends & followers
 	
 	@FindBy(xpath="//*[@id='content']/section/div[1]/div[2]/div[2]/div[1]/div/div/button[2]") WebElement click_twitter_following;
 	
@@ -84,18 +85,11 @@ public class Friends_And_Followers
 	}
 	
 	
-	public void click_friends_Followers() throws Exception
+	public void click_friends_Followers_Fb() throws Exception
 	{
 		
 		click_Friends_Followers.click();
 		Thread.sleep(9000);
-						
-	}
-	
-
-	
-	public void frineds_and_Followers_facebook() throws Exception
-	{
 		click_FF_fb.click();
 		Thread.sleep(5000);
 		click_FF_profile_Fb.click();
@@ -104,13 +98,15 @@ public class Friends_And_Followers
 		Thread.sleep(5000);
 		click_FB_View.click();
 		Thread.sleep(8000);
-		
-		
+			
+								
 	}
 	
-	
+		
 	public void friends_and_followers_twitter() throws Exception
 	{
+		click_Friends_Followers.click();
+		Thread.sleep(5000);
 		click_twitter_account.click();
 		Thread.sleep(5000);
 		click_twitter_profile.click();
@@ -127,39 +123,6 @@ public class Friends_And_Followers
 		
 	}
 		
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+		
 	
 }
