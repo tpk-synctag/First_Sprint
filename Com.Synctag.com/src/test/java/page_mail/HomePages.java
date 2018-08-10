@@ -27,7 +27,7 @@ public class HomePages
 	
 	@FindBy(xpath="//div[@class='container']/div[2]/ul/li[6]/a") WebElement clickContact;
 			
-	@FindBy(xpath="//div[@class='collapse navbar-collapse']/ul/li[10]") WebElement clicklogin;
+	@FindBy(xpath="//*[@id='login_web']") WebElement clicklogin;
 	
 	@FindBy(xpath="//div[@class='container']/div[2]/ul/li[12]") WebElement clickRigister;
 	

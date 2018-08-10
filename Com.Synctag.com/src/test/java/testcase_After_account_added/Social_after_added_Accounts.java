@@ -2,25 +2,25 @@ package testcase_After_account_added;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.relevantcodes.extentreports.ExtentReports;
-import com.relevantcodes.extentreports.ExtentTest;
-import com.relevantcodes.extentreports.LogStatus;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 import page_mail.HomePages;
 import page_mail.LoginPage;
-import pages_Socail.Archive;
-import pages_Socail.Friends_And_Followers;
-import pages_Socail.MailBox;
-import pages_Socail.Mentions;
-import pages_Socail.Queue_Menu;
-import pages_Socail.Social_AddAcount;
-import pages_Socail.Social_Filter;
-import pages_Socail.Time_Line_Feeds;
-import pages_Socail.Xplorer;
+import pages_Socail_Usermode.Archive;
+import pages_Socail_Usermode.Friends_And_Followers;
+import pages_Socail_Usermode.Homefeed;
+import pages_Socail_Usermode.MailBox;
+import pages_Socail_Usermode.Mentions;
+import pages_Socail_Usermode.Queue_Menu;
+import pages_Socail_Usermode.Time_Line_Feeds;
+import pages_Socail_Usermode.Xplorer;
 import factory.Browserfactory;
 import factory.DataProviderFactory;
 
@@ -30,45 +30,44 @@ public class Social_after_added_Accounts
 
 	WebDriver driver;
 	
-	ExtentReports extent;
+	ExtentHtmlReporter reporter;
 	
 	ExtentTest test;
+	ExtentReports extent;
 	
-	@BeforeMethod
+	@BeforeClass
 	public void setUP() throws Exception
 	{
-		extent = new ExtentReports("./Reports/Social_reports.html", true);
-	    test = extent.startTest("This is Mail module testing ");	
+		reporter = new ExtentHtmlReporter("./Reports/Social_reports.html");
 		
+		extent = new ExtentReports();
+		
+		extent.attachReporter(reporter);
+		
+		test = extent.createTest("Synctag social", "This is social user mode reports");
+	    		 		
 		driver=Browserfactory.getbrowser("chrome");
-		test.log(LogStatus.PASS, "****** Browser Opened Successfully *******");
+		test.log(Status.INFO, "--------------------- Browser launched successfully --------------------------");
 		
 		driver.get(DataProviderFactory.getconfig().getApplicationURL());
-		test.log(LogStatus.INFO, " ******* URL Passed succesfully *********");
-		Thread.sleep(2000);
+		test.log(Status.INFO, " ******* URL Passed succesfully *********");
+		
 		
 	}
 	
 	
-	@Test
-	public void socialsynctag() 
-	{
-		
-		
+	
+		@Test (priority=1)
+		public void logintosynctag()
+		{
 			try {
-				
-				HomePages pag=PageFactory.initElements(driver, HomePages.class);
-				pag.homepages_loginbutton();
-						
-				 //Login to synctag Account
-				
-				Thread.sleep(2000);
+								
 				LoginPage log=PageFactory.initElements(driver, LoginPage.class);
-				Thread.sleep(5000);			
-				log.clickloginbutton(DataProviderFactory.getexcel().getdata(0, 0, 0),DataProviderFactory.getexcel().getdata(0, 0, 1));
-				test.log(LogStatus.PASS, "----------- Synctag Login successfully ------------------");
 				
-				Thread.sleep(10000);
+				log.clickloginbutton(DataProviderFactory.getexcel().getdata(0, 0, 0),DataProviderFactory.getexcel().getdata(0, 0, 1));
+				test.log(Status.PASS, "----------- Synctag Login successfully ------------------");
+				
+				Thread.sleep(5000);
 			} 
 			catch (Exception e) 
 			
@@ -77,45 +76,78 @@ public class Social_after_added_Accounts
 				
 			}
 			
-			// Home Feeds 
-			
+		}
+
+	/* 
+		@Test(priority=2)
+		public void homefeeds()
+		{
 			try {
-				Social_Filter fil=PageFactory.initElements(driver, Social_Filter.class );
+				Homefeed home=PageFactory.initElements(driver, Homefeed.class);
+				home.click_home_synclogo();
+				home.click_filters();
+				test.log(Status.PASS, "----------- Home Feeds Sync social  Test cases Executed successfully ------------------");
 				
-				fil.timeline_to_home();		
-						
-				fil.click_filters();
+				home.click_home_Fbfilter();
+				home.click_filters();
+				test.log(Status.PASS, "----------- Home Feeds Facebook Test cases Executed successfully ------------------");
 				
-				Thread.sleep(10000);
-				Social_AddAcount socil=PageFactory.initElements(driver, Social_AddAcount.class );
-				
-				socil.click_home_Fbfilter();
-				fil.click_filters();
-				
-				socil.click_home_twetfilter();
-				fil.click_filters();
-				
-				socil.click_home_synclogo();
+				home.click_home_twetfilter();
+				home.click_filters();
+				test.log(Status.PASS, "----------- Home Feeds Twitter Test cases Executed successfully ------------------");
 				
 			}
-			catch (Exception e)
+			
+			catch (Exception e1)
 			{
-				System.out.println("The Home feed Exception is :"+e.getMessage());		
-				
+				System.out.println(e1.getMessage());
 			}
 			
+		}
+						
+		@Test(priority=4)
+		public void timeline()
+		{
+			 try {
+					Time_Line_Feeds timeline=PageFactory.initElements(driver, Time_Line_Feeds.class);
+					timeline.Click_timeline_sync();
+					timeline.filter_time_line();
+					test.log(Status.PASS, "----------- TimeLine Sync social Test cases Executed  successfully ------------------");
+					
+					timeline.timeline_facebook();
+					timeline.filter_time_line();
+					test.log(Status.PASS, "----------- TimeLine Facebook Test cases Executed  successfully ------------------");
+					
+					timeline.timeline_twitter();
+					timeline.filter_time_line();	
+					test.log(Status.PASS, "----------- TimeLine Twitter Test cases Executed  successfully ------------------");
+					
+					timeline.timeline_instagram();
+					timeline.filter_instgram_time_line();
+					test.log(Status.PASS, "----------- TimeLine Instagram Test cases Executed  successfully ------------------");
+					
+				} 
+				catch (Exception e)
+				{
+				
+					System.out.println("The Time Line Exception is :"+e.getMessage());
+				}
 			
-			// Friends and Followers 
-			
+		}
+
+		@Test(priority=3)
+		public void friendsandfollowers()
+		{
 			try {
 				
 				Friends_And_Followers frnd_follow=PageFactory.initElements(driver, Friends_And_Followers.class );
 				frnd_follow.click_friends_Followers_Fb();
-				Thread.sleep(5000);
+				test.log(Status.PASS, "----------- Facebook Friends & followers  working fine and Test cases Executed  successfully ------------------");
 				frnd_follow.friends_and_followers_twitter();
-				Thread.sleep(5000);
+				test.log(Status.PASS, "----------- Twitter Friends and followers  working fine and Test cases Executed  successfully ------------------");
 				frnd_follow.twitter_syncpage_filter();
-				test.log(LogStatus.PASS, "----------- Synctag Friends and followers  working fine and Test cases Executed  successfully ------------------");
+				Thread.sleep(5000);
+				test.log(Status.PASS, "----------- Twitter Friends and followers Sync page Filter  working fine and Test cases Executed  successfully ------------------");
 				
 				
 			} 
@@ -124,52 +156,21 @@ public class Social_after_added_Accounts
 				System.out.println("The Frineds and follower Exception is :"+e.getMessage());	
 				
 			}
+					
 			
-			
-			// Time Line for User mode
-			
-			try 
-			{
-				Time_Line_Feeds timeline=PageFactory.initElements(driver, Time_Line_Feeds.class);
-				timeline.filter_time_line();
-				
-				timeline.timeline_facebook();
-				timeline.filter_time_line();
-				Thread.sleep(5000);
-				
-				timeline.timeline_twitter();
-				timeline.filter_time_line();
-				Thread.sleep(5000);
-				
-				timeline.timeline_instagram();
-				timeline.filter_instgram_time_line();
-				Thread.sleep(5000);
- 
-				test.log(LogStatus.PASS, "----------- Synctag TimeLine working fine and Test cases Executed  successfully  ------------------");
-				
-				
-			}
-			catch (Exception e) 
-			{
-				System.out.println("The TimeLine Exception is :"+e.getMessage());
-			}
-			
-				
-			// Queue Menu 
-			
+		}
+		*/
+		@Test(priority=5)
+		public void queue()
+		{
 			try {
 				Queue_Menu ques=PageFactory.initElements(driver, Queue_Menu.class);
-				
-				ques.click_Queuemenu();
-				Thread.sleep(5000);
-				
+								
 				ques.queue_facebook();
-				Thread.sleep(5000);
-				
+				test.log(Status.PASS, "----------- FaceBook Queue working fine and Test cases Executed  successfully ------------------");
 				ques.queue_twitter();
 				Thread.sleep(5000);
-				
-				test.log(LogStatus.PASS, "----------- Synctag Queue working fine and Test cases Executed  successfully ------------------");
+				test.log(Status.PASS, "----------- Twitter Queue working fine and Test cases Executed  successfully ------------------");
 				
 			}
 			catch (Exception e) 
@@ -179,13 +180,18 @@ public class Social_after_added_Accounts
 				
 			}
 			
-			// MailBox 
+		} 
+		
+/*
+		@Test (priority=6)		
+		public void mailbox()
+		{
 			try {
 				
 				MailBox mailbox=PageFactory.initElements(driver, MailBox.class);
 				mailbox.mailbox();
 				Thread.sleep(5000);
-				test.log(LogStatus.PASS, "----------- Synctag MailBox Functionality working fine and Test cases Executed  successfully ------------------");
+				test.log(Status.PASS, "-----------  MailBox Functionality working fine and Test cases Executed  successfully ------------------");
 			}
 			catch (Exception e) 
 			{
@@ -193,14 +199,19 @@ public class Social_after_added_Accounts
 				
 			}
 			
-			//Mentions	
-			
+		}
+		 
+	*/	
+		@Test (priority=7)
+		public void mentions()
+		{
 			try
 			{
 				
 				Mentions mention=PageFactory.initElements(driver, Mentions.class);
 				mention.mentionfunction();
-				test.log(LogStatus.PASS, "----------- Synctag Mentions working fine and Test cases Executed  successfully ------------------");
+				Thread.sleep(5000);
+				test.log(Status.PASS, "-----------  Mentions working fine and Test cases Executed  successfully ------------------");
 				
 			}
 			catch (Exception e) 
@@ -208,27 +219,33 @@ public class Social_after_added_Accounts
 				System.out.println("The Mention Exceptio is :"+e.getMessage());
 			}
 			
-			//xplorer
-						
+			
+		}
+		@Test (priority=8)
+		public void xlporer()
+		{
 			try {
 				
 				Xplorer xplor=PageFactory.initElements(driver, Xplorer.class);
 				xplor.xplorer_function();
+				test.log(Status.PASS, "-----------  Xplorer working fine and Test cases Executed  successfully ------------------");
 				
 			} 
 			catch (Exception e)
 			{
 				System.out.println("The Xlorer Exception is :"+e.getMessage());
 			}
-				
-			//Archive
 			
+		}   
+		@Test (priority=9)
+		public void archive()
+		{
 			try 
 			{
 			
 				Archive arch=PageFactory.initElements(driver, Archive.class);
 				arch.archivefunctions();
-				test.log(LogStatus.PASS, "----------- Synctag Archive working fine and Test cases Executed  successfully ------------------");
+				test.log(Status.PASS, "-----------  Archive working fine and Test cases Executed  successfully ------------------");
 				
 			} 
 			catch (Exception e) 
@@ -236,14 +253,14 @@ public class Social_after_added_Accounts
 				System.out.println("The Archive Exception is :"+e.getMessage());
 			}
 			
-			
-	}
+		}
+		
+		
 
-	@AfterMethod
+	@AfterClass
 	public void closeApplicationbrwoser()
 	{
-		extent.endTest(test);
-		
+		 		
 		extent.flush();
 		
 		Browserfactory.closebrowser(driver);

@@ -16,18 +16,20 @@ public class LoginPage
 		
 	}
 	
-	@FindBy(xpath="//div[@class='container']/div[2]/ul/li[10]/a") WebElement clicklogin;
+	@FindBy(xpath="//*[@id='login_web']") WebElement clicklogin;
 	
-	@FindBy(id="login-email") WebElement username;
+	@FindBy(id="emailid") WebElement username;
 		
-	@FindBy(id="login-password") WebElement password;
+	@FindBy(id="password") WebElement password;
 	
-	@FindBy(xpath="//button[text()='Log In']") WebElement loginbutton;
-				
+	@FindBy(xpath="//button[text()='LOGIN']") WebElement loginbutton;
+	
+	
 	public void clickloginbutton(String user,String pass) throws Exception 
 	
 	{
-		
+		clicklogin.click();
+		Thread.sleep(3000);		
 		username.sendKeys(user);
 		Thread.sleep(2000);		
 		password.sendKeys(pass);
