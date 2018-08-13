@@ -2,16 +2,20 @@ package testcase_After_account_added;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
-import page_mail.HomePages;
+import factory.Browserfactory;
+import factory.DataProviderFactory;
 import page_mail.LoginPage;
 import pages_Socail_Usermode.Archive;
 import pages_Socail_Usermode.Friends_And_Followers;
@@ -21,8 +25,8 @@ import pages_Socail_Usermode.Mentions;
 import pages_Socail_Usermode.Queue_Menu;
 import pages_Socail_Usermode.Time_Line_Feeds;
 import pages_Socail_Usermode.Xplorer;
-import factory.Browserfactory;
-import factory.DataProviderFactory;
+import utility.Screenshot;
+
 
 public class Social_after_added_Accounts 
 
@@ -44,12 +48,15 @@ public class Social_after_added_Accounts
 		
 		extent.attachReporter(reporter);
 		
-		test = extent.createTest("Synctag social", "This is social user mode reports");
+		test = extent.createTest("Synctag Setup", "This is setup parts in synctag");
 	    		 		
 		driver=Browserfactory.getbrowser("chrome");
 		test.log(Status.INFO, "--------------------- Browser launched successfully --------------------------");
 		
 		driver.get(DataProviderFactory.getconfig().getApplicationURL());
+		
+		
+		
 		test.log(Status.INFO, " ******* URL Passed succesfully *********");
 		
 		
@@ -78,7 +85,7 @@ public class Social_after_added_Accounts
 			
 		}
 
-	/* 
+	 
 		@Test(priority=2)
 		public void homefeeds()
 		{
@@ -159,7 +166,7 @@ public class Social_after_added_Accounts
 					
 			
 		}
-		*/
+		
 		@Test(priority=5)
 		public void queue()
 		{
@@ -182,7 +189,7 @@ public class Social_after_added_Accounts
 			
 		} 
 		
-/*
+
 		@Test (priority=6)		
 		public void mailbox()
 		{
@@ -201,7 +208,7 @@ public class Social_after_added_Accounts
 			
 		}
 		 
-	*/	
+		
 		@Test (priority=7)
 		public void mentions()
 		{
@@ -257,6 +264,22 @@ public class Social_after_added_Accounts
 		
 		
 
+	@AfterTest	
+	public void failedscrenshot(ITestResult result) throws Exception
+	{
+		if(result.getStatus()==ITestResult.FAILURE)
+		{
+			String screnpath=Screenshot.capturescreenshot(driver, result.getName());
+			
+			test.fail(result.getThrowable().getMessage(), MediaEntityBuilder.createScreenCaptureFromPath(screnpath).build());
+			
+			test.pass(result.getThrowable().getMessage(), MediaEntityBuilder.createScreenCaptureFromPath(screnpath).build());
+			
+		}
+				
+	}
+		
+		
 	@AfterClass
 	public void closeApplicationbrwoser()
 	{
@@ -267,7 +290,5 @@ public class Social_after_added_Accounts
 		
 		
 	}
-	
-	
 	
 }
