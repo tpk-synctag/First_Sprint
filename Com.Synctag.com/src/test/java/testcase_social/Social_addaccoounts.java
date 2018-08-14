@@ -56,24 +56,24 @@ public class Social_addaccoounts
 			LoginPage log=PageFactory.initElements(driver, LoginPage.class);
 			Thread.sleep(5000);			
 			log.clickloginbutton(DataProviderFactory.getexcel().getdata(0, 0, 0),DataProviderFactory.getexcel().getdata(0, 0, 1));
-			test.log(LogStatus.PASS, "----------- Synctag Login successfully ------------------");
+			test.log(Status.PASS, "----------- Synctag Login successfully ------------------");
 			
 			Social_AddAcount soc =PageFactory.initElements(driver, Social_AddAcount.class);
 			Thread.sleep(6000);
 			soc.facebooklogin(DataProviderFactory.getexcel().getdata(2, 0, 0), DataProviderFactory.getexcel().getdata(2, 0, 1));
-			test.log(LogStatus.PASS, "---------------- FaceBook Account Added successfully -------------------");			
+			test.log(Status.PASS, "---------------- FaceBook Account Added successfully -------------------");			
 			Thread.sleep(6000);
 			soc.twitterlogin(DataProviderFactory.getexcel().getdata(2, 1, 0), DataProviderFactory.getexcel().getdata(2, 1, 1));
-			test.log(LogStatus.PASS, " -----------------Twitter Account added successfully ------------------------");
+			test.log(Status.PASS, " -----------------Twitter Account added successfully ------------------------");
 			Thread.sleep(6000);
 			soc.instagram(DataProviderFactory.getexcel().getdata(2, 2, 0), DataProviderFactory.getexcel().getdata(2, 2, 1));
-			test.log(LogStatus.PASS, "------------- Instagram Account added successfully ----------------------");
+			test.log(Status.PASS, "------------- Instagram Account added successfully ----------------------");
 			Thread.sleep(6000);
 			soc.linkedin(DataProviderFactory.getexcel().getdata(2, 3, 0), DataProviderFactory.getexcel().getdata(2, 3, 1));
-			test.log(LogStatus.PASS, "--------------- LinkedIn Account added successfully ---------------------");
+			test.log(Status.PASS, "--------------- LinkedIn Account added successfully ---------------------");
 			Thread.sleep(6000);
 			//soc.click_home();;
-			test.log(LogStatus.INFO, "------------------ All the Home Feeds Loaded Successfully --------------------");		
+			test.log(Status.INFO, "------------------ All the Home Feeds Loaded Successfully --------------------");		
 			Thread.sleep(6000);
 	
 			//Social_Filter fil=PageFactory.initElements(driver, Social_Filter.class);
@@ -88,7 +88,7 @@ public class Social_addaccoounts
 	@AfterMethod
 	public void closeApplicationbrwoser()
 	{
-		extent.endTest(test);
+		 
 		
 		extent.flush();
 		
