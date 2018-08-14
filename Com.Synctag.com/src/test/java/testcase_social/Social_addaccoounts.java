@@ -33,10 +33,10 @@ public class Social_addaccoounts
 	    test = extent.startTest("This is Mail module testing ");	
 		
 		driver=Browserfactory.getbrowser("chrome");
-		test.log(LogStatus.PASS, "****** Browser Opened Successfully *******");
+		test.log(Status.PASS, "****** Browser Opened Successfully *******");
 		
 		driver.get(DataProviderFactory.getconfig().getApplicationURL());
-		test.log(LogStatus.INFO, " ******* URL Passed succesfully *********");
+		test.log(Status.INFO, " ******* URL Passed succesfully *********");
 		Thread.sleep(2000);
 		
 	}
