@@ -111,6 +111,8 @@ public class Social_after_added_Accounts
 			}
 			
 		}
+		
+		
 						
 		@Test(priority=4)
 		public void timeline()
@@ -118,6 +120,7 @@ public class Social_after_added_Accounts
 			 try {
 					Time_Line_Feeds timeline=PageFactory.initElements(driver, Time_Line_Feeds.class);
 					timeline.Click_timeline_sync();
+					Thread.sleep(5000);
 					timeline.filter_time_line();
 					test.log(Status.PASS, "----------- TimeLine Sync social Test cases Executed  successfully ------------------");
 					
@@ -141,7 +144,8 @@ public class Social_after_added_Accounts
 				}
 			
 		}
-
+		 
+ 
 		@Test(priority=3)
 		public void friendsandfollowers()
 		{
@@ -206,9 +210,9 @@ public class Social_after_added_Accounts
 				
 			}
 			
-		}
+		}  
 		 
-		
+		 
 		@Test (priority=7)
 		public void mentions()
 		{
@@ -228,6 +232,7 @@ public class Social_after_added_Accounts
 			
 			
 		}
+		 
 		@Test (priority=8)
 		public void xlporer()
 		{
@@ -244,6 +249,7 @@ public class Social_after_added_Accounts
 			}
 			
 		}   
+	 	
 		@Test (priority=9)
 		public void archive()
 		{
@@ -261,9 +267,8 @@ public class Social_after_added_Accounts
 			}
 			
 		}
-		
-		
-
+		 
+ 
 	@AfterTest	
 	public void failedscrenshot(ITestResult result) throws Exception
 	{
@@ -278,7 +283,7 @@ public class Social_after_added_Accounts
 		}
 				
 	}
-		
+	 
 		
 	@AfterClass
 	public void closeApplicationbrwoser()
