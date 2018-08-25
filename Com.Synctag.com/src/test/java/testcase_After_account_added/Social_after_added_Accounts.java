@@ -111,7 +111,7 @@ public class Social_after_added_Accounts
 			}
 			
 		}
-		
+		 
 		
 						
 		@Test(priority=4)
@@ -126,16 +126,18 @@ public class Social_after_added_Accounts
 					
 					timeline.timeline_facebook();
 					timeline.filter_time_line();
+					Thread.sleep(5000);
 					test.log(Status.PASS, "----------- TimeLine Facebook Test cases Executed  successfully ------------------");
 					
 					timeline.timeline_twitter();
 					timeline.filter_time_line();	
+					Thread.sleep(5000);
 					test.log(Status.PASS, "----------- TimeLine Twitter Test cases Executed  successfully ------------------");
 					
 					timeline.timeline_instagram();
 					timeline.filter_instgram_time_line();
 					test.log(Status.PASS, "----------- TimeLine Instagram Test cases Executed  successfully ------------------");
-					
+					Thread.sleep(5000);
 				} 
 				catch (Exception e)
 				{
@@ -153,8 +155,10 @@ public class Social_after_added_Accounts
 				
 				Friends_And_Followers frnd_follow=PageFactory.initElements(driver, Friends_And_Followers.class );
 				frnd_follow.click_friends_Followers_Fb();
+				Thread.sleep(5000);
 				test.log(Status.PASS, "----------- Facebook Friends & followers  working fine and Test cases Executed  successfully ------------------");
 				frnd_follow.friends_and_followers_twitter();
+				Thread.sleep(5000);
 				test.log(Status.PASS, "----------- Twitter Friends and followers  working fine and Test cases Executed  successfully ------------------");
 				frnd_follow.twitter_syncpage_filter();
 				Thread.sleep(5000);
@@ -182,7 +186,7 @@ public class Social_after_added_Accounts
 				ques.queue_twitter();
 				Thread.sleep(5000);
 				test.log(Status.PASS, "----------- Twitter Queue working fine and Test cases Executed  successfully ------------------");
-				
+				Thread.sleep(6000);
 			}
 			catch (Exception e) 
 			{
@@ -240,6 +244,7 @@ public class Social_after_added_Accounts
 				
 				Xplorer xplor=PageFactory.initElements(driver, Xplorer.class);
 				xplor.xplorer_function();
+				Thread.sleep(5000);
 				test.log(Status.PASS, "-----------  Xplorer working fine and Test cases Executed  successfully ------------------");
 				
 			} 
@@ -274,7 +279,7 @@ public class Social_after_added_Accounts
 	{
 		if(result.getStatus()==ITestResult.FAILURE)
 		{
-			String screnpath=Screenshot.capturescreenshot(driver, result.getName());
+			String screnpath=Screenshot.capturescreenshot(result.getName());
 			
 			test.fail(result.getThrowable().getMessage(), MediaEntityBuilder.createScreenCaptureFromPath(screnpath).build());
 			

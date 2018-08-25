@@ -1,57 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="9" passed="9">
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="SocialUsermode" duration-ms="922171" started-at="2018-08-13T08:24:34Z" finished-at="2018-08-13T08:39:57Z">
+  <suite name="SocialUsermode" duration-ms="695472" started-at="2018-08-20T06:13:11Z" finished-at="2018-08-20T06:24:46Z">
     <groups>
     </groups>
-    <test name="SocialUsermode" duration-ms="922171" started-at="2018-08-13T08:24:34Z" finished-at="2018-08-13T08:39:57Z">
+    <test name="SocialUsermode" duration-ms="695472" started-at="2018-08-20T06:13:11Z" finished-at="2018-08-20T06:24:46Z">
       <class name="testcase_After_account_added.Social_after_added_Accounts">
-        <test-method status="PASS" signature="setUP()[pri:0, instance:testcase_After_account_added.Social_after_added_Accounts@13fee20c]" name="setUP" is-config="true" duration-ms="37738" started-at="2018-08-13T08:24:34Z" finished-at="2018-08-13T08:25:12Z">
+        <test-method status="PASS" signature="setUP()[pri:0, instance:testcase_After_account_added.Social_after_added_Accounts@13fee20c]" name="setUP" is-config="true" duration-ms="12885" started-at="2018-08-20T06:13:11Z" finished-at="2018-08-20T06:13:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUP -->
-        <test-method status="PASS" signature="logintosynctag()[pri:1, instance:testcase_After_account_added.Social_after_added_Accounts@13fee20c]" name="logintosynctag" duration-ms="28746" started-at="2018-08-13T08:25:12Z" finished-at="2018-08-13T08:25:41Z">
+        <test-method status="PASS" signature="logintosynctag()[pri:1, instance:testcase_After_account_added.Social_after_added_Accounts@13fee20c]" name="logintosynctag" duration-ms="29914" started-at="2018-08-20T06:13:24Z" finished-at="2018-08-20T06:13:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logintosynctag -->
-        <test-method status="PASS" signature="homefeeds()[pri:2, instance:testcase_After_account_added.Social_after_added_Accounts@13fee20c]" name="homefeeds" duration-ms="306046" started-at="2018-08-13T08:25:41Z" finished-at="2018-08-13T08:30:47Z">
+        <test-method status="PASS" signature="homefeeds()[pri:2, instance:testcase_After_account_added.Social_after_added_Accounts@13fee20c]" name="homefeeds" duration-ms="6275" started-at="2018-08-20T06:13:54Z" finished-at="2018-08-20T06:14:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homefeeds -->
-        <test-method status="PASS" signature="friendsandfollowers()[pri:3, instance:testcase_After_account_added.Social_after_added_Accounts@13fee20c]" name="friendsandfollowers" duration-ms="81468" started-at="2018-08-13T08:30:47Z" finished-at="2018-08-13T08:32:08Z">
+        <test-method status="PASS" signature="friendsandfollowers()[pri:3, instance:testcase_After_account_added.Social_after_added_Accounts@13fee20c]" name="friendsandfollowers" duration-ms="137750" started-at="2018-08-20T06:14:00Z" finished-at="2018-08-20T06:16:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- friendsandfollowers -->
-        <test-method status="PASS" signature="timeline()[pri:4, instance:testcase_After_account_added.Social_after_added_Accounts@13fee20c]" name="timeline" duration-ms="259878" started-at="2018-08-13T08:32:08Z" finished-at="2018-08-13T08:36:28Z">
+        <test-method status="PASS" signature="timeline()[pri:4, instance:testcase_After_account_added.Social_after_added_Accounts@13fee20c]" name="timeline" duration-ms="263931" started-at="2018-08-20T06:16:18Z" finished-at="2018-08-20T06:20:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- timeline -->
-        <test-method status="PASS" signature="queue()[pri:5, instance:testcase_After_account_added.Social_after_added_Accounts@13fee20c]" name="queue" duration-ms="88166" started-at="2018-08-13T08:36:28Z" finished-at="2018-08-13T08:37:57Z">
+        <test-method status="PASS" signature="queue()[pri:5, instance:testcase_After_account_added.Social_after_added_Accounts@13fee20c]" name="queue" duration-ms="17512" started-at="2018-08-20T06:20:42Z" finished-at="2018-08-20T06:20:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- queue -->
-        <test-method status="PASS" signature="mailbox()[pri:6, instance:testcase_After_account_added.Social_after_added_Accounts@13fee20c]" name="mailbox" duration-ms="10441" started-at="2018-08-13T08:37:57Z" finished-at="2018-08-13T08:38:07Z">
+        <test-method status="PASS" signature="mailbox()[pri:6, instance:testcase_After_account_added.Social_after_added_Accounts@13fee20c]" name="mailbox" duration-ms="42371" started-at="2018-08-20T06:20:59Z" finished-at="2018-08-20T06:21:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mailbox -->
-        <test-method status="PASS" signature="mentions()[pri:7, instance:testcase_After_account_added.Social_after_added_Accounts@13fee20c]" name="mentions" duration-ms="48066" started-at="2018-08-13T08:38:07Z" finished-at="2018-08-13T08:38:55Z">
+        <test-method status="PASS" signature="mentions()[pri:7, instance:testcase_After_account_added.Social_after_added_Accounts@13fee20c]" name="mentions" duration-ms="60614" started-at="2018-08-20T06:21:42Z" finished-at="2018-08-20T06:22:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mentions -->
-        <test-method status="PASS" signature="xlporer()[pri:8, instance:testcase_After_account_added.Social_after_added_Accounts@13fee20c]" name="xlporer" duration-ms="20738" started-at="2018-08-13T08:38:55Z" finished-at="2018-08-13T08:39:16Z">
+        <test-method status="PASS" signature="xlporer()[pri:8, instance:testcase_After_account_added.Social_after_added_Accounts@13fee20c]" name="xlporer" duration-ms="121702" started-at="2018-08-20T06:22:42Z" finished-at="2018-08-20T06:24:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- xlporer -->
-        <test-method status="PASS" signature="archive()[pri:9, instance:testcase_After_account_added.Social_after_added_Accounts@13fee20c]" name="archive" duration-ms="38528" started-at="2018-08-13T08:39:16Z" finished-at="2018-08-13T08:39:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- archive -->
-        <test-method status="PASS" signature="closeApplicationbrwoser()[pri:0, instance:testcase_After_account_added.Social_after_added_Accounts@13fee20c]" name="closeApplicationbrwoser" is-config="true" duration-ms="2165" started-at="2018-08-13T08:39:54Z" finished-at="2018-08-13T08:39:56Z">
+        <test-method status="PASS" signature="closeApplicationbrwoser()[pri:0, instance:testcase_After_account_added.Social_after_added_Accounts@13fee20c]" name="closeApplicationbrwoser" is-config="true" duration-ms="2357" started-at="2018-08-20T06:24:44Z" finished-at="2018-08-20T06:24:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplicationbrwoser -->
-        <test-method status="FAIL" signature="failedscrenshot(org.testng.ITestResult)[pri:0, instance:testcase_After_account_added.Social_after_added_Accounts@13fee20c]" name="failedscrenshot" is-config="true" duration-ms="0" started-at="2018-08-13T08:39:56Z" finished-at="2018-08-13T08:39:56Z">
+        <test-method status="FAIL" signature="failedscrenshot(org.testng.ITestResult)[pri:0, instance:testcase_After_account_added.Social_after_added_Accounts@13fee20c]" name="failedscrenshot" is-config="true" duration-ms="0" started-at="2018-08-20T06:24:46Z" finished-at="2018-08-20T06:24:46Z">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[

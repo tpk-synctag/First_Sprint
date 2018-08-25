@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 10, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 924.449 sec <<< FAILURE! - in TestSuite
-failedscrenshot(testcase_After_account_added.Social_after_added_Accounts)  Time elapsed: 40.737 sec  <<< FAILURE!
+Tests run: 9, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 697.497 sec <<< FAILURE! - in TestSuite
+failedscrenshot(testcase_After_account_added.Social_after_added_Accounts)  Time elapsed: 124.117 sec  <<< FAILURE!
 org.testng.TestNGException: 
 Can inject only one of <ITestContext, XmlTest> into a @AfterTest annotated failedscrenshot.
 For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection

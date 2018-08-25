@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.testng.annotations.AfterMethod"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.Keys"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.support.FindAll"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.support.FindBys"/>
 <fullyQualifiedTypeName name="pages_Socail.Home_click"/>
@@ -46,18 +43,21 @@
 <fullyQualifiedTypeName name="pages_Socail_Usermode.Mentions"/>
 <fullyQualifiedTypeName name="pages_Socail_Usermode.Xplorer"/>
 <fullyQualifiedTypeName name="pages_Socail_Usermode.Homefeed"/>
-<fullyQualifiedTypeName name="pages_Socail_Usermode.Archive"/>
 <fullyQualifiedTypeName name="page_social_BusinessMode.Timeline_Pages"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.TakesScreenshot"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.OutputType"/>
-<fullyQualifiedTypeName name="java.io.File"/>
-<fullyQualifiedTypeName name="org.apache.commons.io.FileUtils"/>
 <fullyQualifiedTypeName name="org.testng.ITestResult"/>
 <fullyQualifiedTypeName name="org.testng.annotations.AfterTest"/>
 <fullyQualifiedTypeName name="com.aventstack.extentreports.MediaEntityBuilder"/>
-<fullyQualifiedTypeName name="org.testng.annotations.Test"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.support.PageFactory"/>
 <fullyQualifiedTypeName name="page_social_BusinessMode.Queue_Business_mode"/>
+<fullyQualifiedTypeName name="page_social_BusinessMode.MailBox"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.support.PageFactory"/>
+<fullyQualifiedTypeName name="pages_Socail_Usermode.Archive"/>
+<fullyQualifiedTypeName name="org.testng.annotations.Test"/>
 <fullyQualifiedTypeName name="utility.Screenshot"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.TakesScreenshot"/>
+<fullyQualifiedTypeName name="org.apache.commons.io.FileUtils"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.OutputType"/>
+<fullyQualifiedTypeName name="utility.Takescreenscreenshot"/>
+<fullyQualifiedTypeName name="utility.Takescreenscreens"/>
 </qualifiedTypeNameHistroy>
