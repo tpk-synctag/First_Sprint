@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.openqa.selenium.support.FindAll"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.support.FindBys"/>
-<fullyQualifiedTypeName name="pages_Socail.Home_click"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.Alert"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.interactions.Actions"/>
-<fullyQualifiedTypeName name="pages_media.Media_pages"/>
-<fullyQualifiedTypeName name="com.relevantcodes.extentreports.LogStatus"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.JavascriptExecutor"/>
-<fullyQualifiedTypeName name="pages_Socail.Time_Line_Feeds"/>
-<fullyQualifiedTypeName name="java.util.Queue"/>
-<fullyQualifiedTypeName name="pages_Socail.Queue_Menu"/>
 <fullyQualifiedTypeName name="pages_Socail.MailBox"/>
 <fullyQualifiedTypeName name="pages_Socail.Mentions"/>
 <fullyQualifiedTypeName name="pages_Socail.Xplorer"/>
@@ -50,14 +39,25 @@
 <fullyQualifiedTypeName name="com.aventstack.extentreports.MediaEntityBuilder"/>
 <fullyQualifiedTypeName name="page_social_BusinessMode.Queue_Business_mode"/>
 <fullyQualifiedTypeName name="page_social_BusinessMode.MailBox"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.support.PageFactory"/>
 <fullyQualifiedTypeName name="pages_Socail_Usermode.Archive"/>
-<fullyQualifiedTypeName name="org.testng.annotations.Test"/>
-<fullyQualifiedTypeName name="utility.Screenshot"/>
-<fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.TakesScreenshot"/>
 <fullyQualifiedTypeName name="org.apache.commons.io.FileUtils"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.OutputType"/>
 <fullyQualifiedTypeName name="utility.Takescreenscreenshot"/>
 <fullyQualifiedTypeName name="utility.Takescreenscreens"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.chrome.ChromeOptions"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.remote.DesiredCapabilities"/>
+<fullyQualifiedTypeName name="com.sun.javafx.collections.MappingChange.Map"/>
+<fullyQualifiedTypeName name="utility.Screenshot"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.opera.OperaDriver"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.opera.OperaOptions"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="page_social_BusinessMode.Mentions_Business"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.interactions.Actions"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.Keys"/>
+<fullyQualifiedTypeName name="org.testng.annotations.Test"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.support.PageFactory"/>
+<fullyQualifiedTypeName name="page_social_BusinessMode.Friends_And_Followers_business"/>
 </qualifiedTypeNameHistroy>

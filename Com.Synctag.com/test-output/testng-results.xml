@@ -1,60 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="45321" started-at="2018-08-24T12:50:00Z" finished-at="2018-08-24T12:50:46Z">
+  <suite name="Default suite" duration-ms="494162" started-at="2018-09-20T12:19:47Z" finished-at="2018-09-20T12:28:01Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="45321" started-at="2018-08-24T12:50:00Z" finished-at="2018-08-24T12:50:46Z">
+    <test name="Default test" duration-ms="494162" started-at="2018-09-20T12:19:47Z" finished-at="2018-09-20T12:28:01Z">
       <class name="testcase_After_account_added.Social_BusinessMode">
-        <test-method status="PASS" signature="setUP()[pri:0, instance:testcase_After_account_added.Social_BusinessMode@490ab905]" name="setUP" is-config="true" duration-ms="10000" started-at="2018-08-24T12:50:01Z" finished-at="2018-08-24T12:50:11Z">
+        <test-method status="PASS" signature="setUP()[pri:0, instance:testcase_After_account_added.Social_BusinessMode@490ab905]" name="setUP" is-config="true" duration-ms="15507" started-at="2018-09-20T12:19:47Z" finished-at="2018-09-20T12:20:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUP -->
-        <test-method status="PASS" signature="logintosynctag()[pri:1, instance:testcase_After_account_added.Social_BusinessMode@490ab905]" name="logintosynctag" duration-ms="35232" started-at="2018-08-24T12:50:11Z" finished-at="2018-08-24T12:50:46Z">
+        <test-method status="PASS" signature="logintosynctag()[pri:1, instance:testcase_After_account_added.Social_BusinessMode@490ab905]" name="logintosynctag" duration-ms="30071" started-at="2018-09-20T12:20:03Z" finished-at="2018-09-20T12:20:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logintosynctag -->
-        <test-method status="FAIL" signature="failedscrenshot(org.testng.ITestResult)[pri:0, instance:testcase_After_account_added.Social_BusinessMode@490ab905]" name="failedscrenshot" is-config="true" duration-ms="0" started-at="2018-08-24T12:50:46Z" finished-at="2018-08-24T12:50:46Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Can inject only one of <ITestContext, XmlTest> into a @AfterClass annotated failedscrenshot.
-For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Can inject only one of <ITestContext, XmlTest> into a @AfterClass annotated failedscrenshot.
-For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
-at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:407)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
-at org.testng.internal.Parameters.createParameters(Parameters.java:635)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:214)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method status="PASS" signature="BusinessTimeline()[pri:2, instance:testcase_After_account_added.Social_BusinessMode@490ab905]" name="BusinessTimeline" duration-ms="248848" started-at="2018-09-20T12:20:33Z" finished-at="2018-09-20T12:24:42Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- failedscrenshot -->
+        </test-method> <!-- BusinessTimeline -->
+        <test-method status="PASS" signature="friends_followers()[pri:3, instance:testcase_After_account_added.Social_BusinessMode@490ab905]" name="friends_followers" duration-ms="20046" started-at="2018-09-20T12:24:42Z" finished-at="2018-09-20T12:25:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- friends_followers -->
+        <test-method status="PASS" signature="queuebusinessmode()[pri:4, instance:testcase_After_account_added.Social_BusinessMode@490ab905]" name="queuebusinessmode" duration-ms="90901" started-at="2018-09-20T12:25:02Z" finished-at="2018-09-20T12:26:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- queuebusinessmode -->
+        <test-method status="PASS" signature="Business_mentions()[pri:5, instance:testcase_After_account_added.Social_BusinessMode@490ab905]" name="Business_mentions" duration-ms="47879" started-at="2018-09-20T12:26:33Z" finished-at="2018-09-20T12:27:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Business_mentions -->
+        <test-method status="PASS" signature="business_Mode_Archive()[pri:10, instance:testcase_After_account_added.Social_BusinessMode@490ab905]" name="business_Mode_Archive" duration-ms="38822" started-at="2018-09-20T12:27:21Z" finished-at="2018-09-20T12:27:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- business_Mode_Archive -->
+        <test-method status="PASS" signature="closeApplicationbrwoser()[pri:0, instance:testcase_After_account_added.Social_BusinessMode@490ab905]" name="closeApplicationbrwoser" is-config="true" duration-ms="1977" started-at="2018-09-20T12:27:59Z" finished-at="2018-09-20T12:28:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplicationbrwoser -->
       </class> <!-- testcase_After_account_added.Social_BusinessMode -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

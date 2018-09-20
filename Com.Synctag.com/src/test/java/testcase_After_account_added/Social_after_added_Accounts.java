@@ -2,15 +2,12 @@ package testcase_After_account_added;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
@@ -25,7 +22,6 @@ import pages_Socail_Usermode.Mentions;
 import pages_Socail_Usermode.Queue_Menu;
 import pages_Socail_Usermode.Time_Line_Feeds;
 import pages_Socail_Usermode.Xplorer;
-import utility.Screenshot;
 
 
 public class Social_after_added_Accounts 
@@ -91,7 +87,8 @@ public class Social_after_added_Accounts
 		{
 			try {
 				Homefeed home=PageFactory.initElements(driver, Homefeed.class);
-				home.click_home_synclogo();
+				home.timeline_to_home();
+				Thread.sleep(5000);
 				home.click_filters();
 				test.log(Status.PASS, "----------- Home Feeds Sync social  Test cases Executed successfully ------------------");
 				
@@ -273,22 +270,7 @@ public class Social_after_added_Accounts
 			
 		}
 		 
- 
-	@AfterTest	
-	public void failedscrenshot(ITestResult result) throws Exception
-	{
-		if(result.getStatus()==ITestResult.FAILURE)
-		{
-			String screnpath=Screenshot.capturescreenshot(result.getName());
-			
-			test.fail(result.getThrowable().getMessage(), MediaEntityBuilder.createScreenCaptureFromPath(screnpath).build());
-			
-			test.pass(result.getThrowable().getMessage(), MediaEntityBuilder.createScreenCaptureFromPath(screnpath).build());
-			
-		}
-				
-	}
-	 
+ 	 
 		
 	@AfterClass
 	public void closeApplicationbrwoser()

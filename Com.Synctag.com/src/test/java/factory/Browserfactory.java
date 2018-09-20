@@ -4,9 +4,10 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.opera.OperaDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class Browserfactory
 {
@@ -44,10 +45,19 @@ public class Browserfactory
 		}
 		else if(Browsername.equalsIgnoreCase("operapath"))
 		{
-			
-			System.setProperty("webdriver.opera.driver", DataProviderFactory.getconfig().getOperadriver());
-			
-			driver=new OperaDriver();
+					
+			String operaChromiumDriver = DataProviderFactory.getconfig().getOperadriver();
+			String operaBrowserLocation = "C:\\Program Files\\Opera\\55.0.2994.44\\opera.exe";
+ 
+			System.setProperty("webdriver.opera.driver", operaChromiumDriver);
+			ChromeOptions options = new ChromeOptions();
+			options.setBinary(operaBrowserLocation);        
+
+			DesiredCapabilities capabilities = new DesiredCapabilities();
+			capabilities.setCapability(ChromeOptions.CAPABILITY, options); // capabilities , 
+			//OperaDriver browser = new OperaDriver(options);   
+						
+		//	driver=browser;
 			
 		}
 		
