@@ -17,7 +17,6 @@ import page_mail.LoginPage;
 import pages_Socail_Usermode.Archive;
 import pages_Socail_Usermode.Friends_And_Followers;
 import pages_Socail_Usermode.Homefeed;
-import pages_Socail_Usermode.MailBox;
 import pages_Socail_Usermode.Mentions;
 import pages_Socail_Usermode.Queue_Menu;
 import pages_Socail_Usermode.Time_Line_Feeds;
@@ -194,7 +193,7 @@ public class Social_after_added_Accounts
 			
 		} 
 		
-
+		/*
 		@Test (priority=6)		
 		public void mailbox()
 		{
@@ -212,7 +211,7 @@ public class Social_after_added_Accounts
 			}
 			
 		}  
-		 
+		 */
 		 
 		@Test (priority=7)
 		public void mentions()
