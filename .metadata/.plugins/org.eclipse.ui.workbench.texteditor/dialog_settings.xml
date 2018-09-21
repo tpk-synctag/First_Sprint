@@ -6,12 +6,13 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="//*[@id=&apos;ViewPost&apos;]/div/div[3]/div[2]/div[3]/div[1]/div/span[1]/span" key="selection"/>
+		<item value="//*[@id=&apos;SocialFeedController&apos;]/div[5]/div[1]/div[2]/div[2]/div[2]/div/div/div/div/div/div[2]/div/div[1]/p" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="//*[@id=&apos;SocialFeedController&apos;]/div[5]/div[1]/div[2]/div[2]/div[2]/div/div/div/div/div/div[2]/div/div[1]/p"/>
 			<item value="//*[@id=&apos;ViewPost&apos;]/div/div[3]/div[2]/div[3]/div[1]/div/span[1]/span"/>
 			<item value="//*[@id=&apos;SocialFeedController&apos;]/div[5]/div[1]/div[2]/div[2]/div[5]"/>
 			<item value="//*[@id=&apos;content&apos;]/section/div[1]/div[2]/div[4]/div[11]/a/div"/>
