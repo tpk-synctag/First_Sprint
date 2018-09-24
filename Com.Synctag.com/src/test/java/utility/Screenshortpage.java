@@ -13,16 +13,16 @@ import org.openqa.selenium.WebDriver;
 public class Screenshortpage 
 {
 
-	static WebDriver driver ;
+	 
 	
-	public static void main(String Screensht)
+	public static void capturescreenshot(WebDriver driver)
 	{
 		
 		TakesScreenshot ts=(TakesScreenshot)driver;
 		
 		File src=ts.getScreenshotAs(OutputType.FILE);
 		
-		File dest=new File("./Screenshot/screen1");
+		File dest=new File("C:\\Users\\user\\Desktop\\Automation_Testing_Framework\\Com.Synctag.com\\Screenshot\\login.png");
 		
 		try 
 		{

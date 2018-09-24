@@ -7,11 +7,8 @@
         <methods>
           <include name="closeApplicationbrwoser"/>
           <include name="BusinessTimeline"/>
-          <include name="queuebusinessmode"/>
-          <include name="logintosynctag"/>
           <include name="setUP"/>
-          <include name="Mailbox_business"/>
-          <include name="business_Mode_Archive"/>
+          <include name="teardown"/>
         </methods>
       </class> <!-- testcase_After_account_added.Social_BusinessMode -->
     </classes>

@@ -1,45 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="494162" started-at="2018-09-20T12:19:47Z" finished-at="2018-09-20T12:28:01Z">
+  <suite name="Default suite" duration-ms="39066" started-at="2018-09-24T13:38:35Z" finished-at="2018-09-24T13:39:14Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="494162" started-at="2018-09-20T12:19:47Z" finished-at="2018-09-20T12:28:01Z">
-      <class name="testcase_After_account_added.Social_BusinessMode">
-        <test-method status="PASS" signature="setUP()[pri:0, instance:testcase_After_account_added.Social_BusinessMode@490ab905]" name="setUP" is-config="true" duration-ms="15507" started-at="2018-09-20T12:19:47Z" finished-at="2018-09-20T12:20:03Z">
+    <test name="Default test" duration-ms="39066" started-at="2018-09-24T13:38:35Z" finished-at="2018-09-24T13:39:14Z">
+      <class name="testcase_After_account_added.Social_after_added_Accounts">
+        <test-method status="PASS" signature="setUP()[pri:0, instance:testcase_After_account_added.Social_after_added_Accounts@490ab905]" name="setUP" is-config="true" duration-ms="9910" started-at="2018-09-24T13:38:35Z" finished-at="2018-09-24T13:38:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUP -->
-        <test-method status="PASS" signature="logintosynctag()[pri:1, instance:testcase_After_account_added.Social_BusinessMode@490ab905]" name="logintosynctag" duration-ms="30071" started-at="2018-09-20T12:20:03Z" finished-at="2018-09-20T12:20:33Z">
+        <test-method status="PASS" signature="logintosynctag()[pri:1, instance:testcase_After_account_added.Social_after_added_Accounts@490ab905]" name="logintosynctag" duration-ms="28135" started-at="2018-09-24T13:38:45Z" finished-at="2018-09-24T13:39:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logintosynctag -->
-        <test-method status="PASS" signature="BusinessTimeline()[pri:2, instance:testcase_After_account_added.Social_BusinessMode@490ab905]" name="BusinessTimeline" duration-ms="248848" started-at="2018-09-20T12:20:33Z" finished-at="2018-09-20T12:24:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BusinessTimeline -->
-        <test-method status="PASS" signature="friends_followers()[pri:3, instance:testcase_After_account_added.Social_BusinessMode@490ab905]" name="friends_followers" duration-ms="20046" started-at="2018-09-20T12:24:42Z" finished-at="2018-09-20T12:25:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- friends_followers -->
-        <test-method status="PASS" signature="queuebusinessmode()[pri:4, instance:testcase_After_account_added.Social_BusinessMode@490ab905]" name="queuebusinessmode" duration-ms="90901" started-at="2018-09-20T12:25:02Z" finished-at="2018-09-20T12:26:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- queuebusinessmode -->
-        <test-method status="PASS" signature="Business_mentions()[pri:5, instance:testcase_After_account_added.Social_BusinessMode@490ab905]" name="Business_mentions" duration-ms="47879" started-at="2018-09-20T12:26:33Z" finished-at="2018-09-20T12:27:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Business_mentions -->
-        <test-method status="PASS" signature="business_Mode_Archive()[pri:10, instance:testcase_After_account_added.Social_BusinessMode@490ab905]" name="business_Mode_Archive" duration-ms="38822" started-at="2018-09-20T12:27:21Z" finished-at="2018-09-20T12:27:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- business_Mode_Archive -->
-        <test-method status="PASS" signature="closeApplicationbrwoser()[pri:0, instance:testcase_After_account_added.Social_BusinessMode@490ab905]" name="closeApplicationbrwoser" is-config="true" duration-ms="1977" started-at="2018-09-20T12:27:59Z" finished-at="2018-09-20T12:28:01Z">
+        <test-method status="PASS" signature="closeApplicationbrwoser()[pri:0, instance:testcase_After_account_added.Social_after_added_Accounts@490ab905]" name="closeApplicationbrwoser" is-config="true" duration-ms="965" started-at="2018-09-24T13:39:13Z" finished-at="2018-09-24T13:39:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplicationbrwoser -->
-      </class> <!-- testcase_After_account_added.Social_BusinessMode -->
+      </class> <!-- testcase_After_account_added.Social_after_added_Accounts -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

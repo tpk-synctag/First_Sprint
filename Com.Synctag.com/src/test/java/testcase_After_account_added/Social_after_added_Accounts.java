@@ -32,18 +32,20 @@ public class Social_after_added_Accounts
 	ExtentHtmlReporter reporter;
 	
 	ExtentTest test;
+	
 	ExtentReports extent;
 	
 	@BeforeClass
 	public void setUP() throws Exception
 	{
-		reporter = new ExtentHtmlReporter("./Reports/Social_reports.html");
+		
+		reporter = new ExtentHtmlReporter("./Reports/userreports.html");
 		
 		extent = new ExtentReports();
 		
 		extent.attachReporter(reporter);
 		
-		test = extent.createTest("Synctag Setup", "This is setup parts in synctag");
+		test = extent.createTest("Synctag social user mode ", "This Entire reports is usermode reports");
 	    		 		
 		driver=Browserfactory.getbrowser("chrome");
 		test.log(Status.INFO, "--------------------- Browser launched successfully --------------------------");
@@ -74,12 +76,12 @@ public class Social_after_added_Accounts
 			catch (Exception e) 
 			
 			{
-				System.out.println("The Home page Exception is :" +e.getMessage());
+				System.out.println("The Login Exception is :" +e.getMessage());
 				
 			}
 			
 		}
-
+		/*
 	 
 		@Test(priority=2)
 		public void homefeeds()
@@ -101,14 +103,15 @@ public class Social_after_added_Accounts
 				
 			}
 			
-			catch (Exception e1)
+			catch (Exception e)
 			{
-				System.out.println(e1.getMessage());
+				System.out.println("The Home feed Exception is : "+e.getMessage());
 			}
 			
 		}
+		*/
 		 
-		
+		/*
 						
 		@Test(priority=4)
 		public void timeline()
@@ -211,7 +214,7 @@ public class Social_after_added_Accounts
 			}
 			
 		}  
-		 */
+		  
 		 
 		@Test (priority=7)
 		public void mentions()
@@ -269,13 +272,13 @@ public class Social_after_added_Accounts
 			
 		}
 		 
- 	 
+ 	 */
 		
 	@AfterClass
 	public void closeApplicationbrwoser()
 	{
 		 		
-		extent.flush();
+	
 		
 		Browserfactory.closebrowser(driver);
 		
