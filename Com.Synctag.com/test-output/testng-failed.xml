@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcase_After_account_added.Social_BusinessMode">
+      <class name="testcase_media.Verify_Media_with_Reports">
         <methods>
           <include name="closeApplicationbrwoser"/>
-          <include name="BusinessTimeline"/>
+          <include name="verify_Media_account"/>
           <include name="setUP"/>
-          <include name="teardown"/>
         </methods>
-      </class> <!-- testcase_After_account_added.Social_BusinessMode -->
+      </class> <!-- testcase_media.Verify_Media_with_Reports -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,25 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="39066" started-at="2018-09-24T13:38:35Z" finished-at="2018-09-24T13:39:14Z">
+  <suite name="Default suite" duration-ms="272704" started-at="2018-09-25T13:22:13Z" finished-at="2018-09-25T13:26:46Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="39066" started-at="2018-09-24T13:38:35Z" finished-at="2018-09-24T13:39:14Z">
-      <class name="testcase_After_account_added.Social_after_added_Accounts">
-        <test-method status="PASS" signature="setUP()[pri:0, instance:testcase_After_account_added.Social_after_added_Accounts@490ab905]" name="setUP" is-config="true" duration-ms="9910" started-at="2018-09-24T13:38:35Z" finished-at="2018-09-24T13:38:45Z">
+    <test name="Default test" duration-ms="272704" started-at="2018-09-25T13:22:13Z" finished-at="2018-09-25T13:26:46Z">
+      <class name="testcase_media.Verify_Media_with_Reports">
+        <test-method status="PASS" signature="setUP()[pri:0, instance:testcase_media.Verify_Media_with_Reports@490ab905]" name="setUP" is-config="true" duration-ms="17514" started-at="2018-09-25T13:22:13Z" finished-at="2018-09-25T13:22:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUP -->
-        <test-method status="PASS" signature="logintosynctag()[pri:1, instance:testcase_After_account_added.Social_after_added_Accounts@490ab905]" name="logintosynctag" duration-ms="28135" started-at="2018-09-24T13:38:45Z" finished-at="2018-09-24T13:39:13Z">
+        <test-method status="PASS" signature="verify_Media_account()[pri:1, instance:testcase_media.Verify_Media_with_Reports@490ab905]" name="verify_Media_account" duration-ms="26949" started-at="2018-09-25T13:22:31Z" finished-at="2018-09-25T13:22:58Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logintosynctag -->
-        <test-method status="PASS" signature="closeApplicationbrwoser()[pri:0, instance:testcase_After_account_added.Social_after_added_Accounts@490ab905]" name="closeApplicationbrwoser" is-config="true" duration-ms="965" started-at="2018-09-24T13:39:13Z" finished-at="2018-09-24T13:39:14Z">
+        </test-method> <!-- verify_Media_account -->
+        <test-method status="PASS" signature="Moving_Media_module()[pri:2, instance:testcase_media.Verify_Media_with_Reports@490ab905]" name="Moving_Media_module" duration-ms="42843" started-at="2018-09-25T13:22:58Z" finished-at="2018-09-25T13:23:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Moving_Media_module -->
+        <test-method status="PASS" signature="add_youtube_account()[pri:3, instance:testcase_media.Verify_Media_with_Reports@490ab905]" name="add_youtube_account" duration-ms="52123" started-at="2018-09-25T13:23:40Z" finished-at="2018-09-25T13:24:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_youtube_account -->
+        <test-method status="PASS" signature="add_dailymotions_account()[pri:4, instance:testcase_media.Verify_Media_with_Reports@490ab905]" name="add_dailymotions_account" duration-ms="32510" started-at="2018-09-25T13:24:33Z" finished-at="2018-09-25T13:25:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_dailymotions_account -->
+        <test-method status="PASS" signature="add_vime0_account()[pri:5, instance:testcase_media.Verify_Media_with_Reports@490ab905]" name="add_vime0_account" duration-ms="36091" started-at="2018-09-25T13:25:05Z" finished-at="2018-09-25T13:25:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_vime0_account -->
+        <test-method status="PASS" signature="add_soundcloud_account()[pri:6, instance:testcase_media.Verify_Media_with_Reports@490ab905]" name="add_soundcloud_account" duration-ms="42549" started-at="2018-09-25T13:25:41Z" finished-at="2018-09-25T13:26:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_soundcloud_account -->
+        <test-method status="PASS" signature="UserfeedsFeeds_account()[pri:7, instance:testcase_media.Verify_Media_with_Reports@490ab905]" name="UserfeedsFeeds_account" duration-ms="20089" started-at="2018-09-25T13:26:24Z" finished-at="2018-09-25T13:26:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserfeedsFeeds_account -->
+        <test-method status="PASS" signature="closeApplicationbrwoser()[pri:0, instance:testcase_media.Verify_Media_with_Reports@490ab905]" name="closeApplicationbrwoser" is-config="true" duration-ms="1865" started-at="2018-09-25T13:26:44Z" finished-at="2018-09-25T13:26:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplicationbrwoser -->
-      </class> <!-- testcase_After_account_added.Social_after_added_Accounts -->
+      </class> <!-- testcase_media.Verify_Media_with_Reports -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
