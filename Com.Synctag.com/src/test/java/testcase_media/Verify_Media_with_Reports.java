@@ -12,6 +12,7 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 import page_mail.LoginPage;
+import pages_media.Favourite;
 import pages_media.Home_Media;
 import pages_media.Media_pages;
 import factory.Browserfactory;
@@ -37,7 +38,7 @@ public class Verify_Media_with_Reports
 		
 		extent.attachReporter(reporter);
 		
-		test = extent.createTest("Synctag social", "This is Media user mode reports");
+		test = extent.createTest("Synctag Media USerMode", "This is Media user mode reports");
 		
 		driver=Browserfactory.getbrowser("chrome");
 		test.log(Status.PASS, "****** Browser Opened Successfully *******");
@@ -81,7 +82,7 @@ public class Verify_Media_with_Reports
 		}	
 		
 	}
-	
+	 
 	@Test(priority=5)
 	public void add_vime0_account()
 	{
@@ -161,7 +162,7 @@ public class Verify_Media_with_Reports
 		
 		
 	}
-	
+	 
 	@Test(priority=7)
 	public void UserfeedsFeeds_account()
 	{
@@ -169,15 +170,42 @@ public class Verify_Media_with_Reports
 		try {
 			
 			Home_Media homeuser=PageFactory.initElements(driver, Home_Media.class);
-			homeuser.Home_feeds();
+			homeuser.youtube_homefeeds();
 			Thread.sleep(6000);
-			homeuser.Favourite_media();
+			homeuser.Dailymotions_homefeeds();
 			Thread.sleep(6000);
-			test.log(Status.INFO, "-------------- Home Page is moved successfully ---------------");
+			homeuser.Soundcloud_homefeeds();
+			Thread.sleep(6000);
+			test.log(Status.PASS, "-------------- Home Feeds loaded successfully ---------------");
 		}  
 		catch (Exception e) 
 		{			
 			System.out.println("The USerFeeds Exception is :"+e.getMessage());
+					
+		}
+		 
+	}
+	
+	@Test(priority=8)
+	public void Favourite_Feeds()
+	{
+		
+		try {
+			Favourite favu=PageFactory.initElements(driver, Favourite.class);
+			
+			favu.Favourite_youtube_media();
+			
+			favu.Favourite_Dailymotions_media();
+			
+			favu.Favourite_Vimeo_media();
+			
+			favu.Favourite_soundcloud_media();
+			test.log(Status.PASS, " -------- --- The Favourite feeds loaded successfully ------------");
+			 
+		}  
+		catch (Exception e) 
+		{			
+			System.out.println("The Favourite feeds Exception is :"+e.getMessage());
 					
 		}
 		 
