@@ -164,7 +164,7 @@ public class Verify_Media_with_Reports
 	}
 	 
 	@Test(priority=7)
-	public void UserfeedsFeeds_account()
+	public void UserHomeFeeds_account()
 	{
 		
 		try {
@@ -194,12 +194,13 @@ public class Verify_Media_with_Reports
 			Favourite favu=PageFactory.initElements(driver, Favourite.class);
 			
 			favu.Favourite_youtube_media();
-			
+			Thread.sleep(6000);
 			favu.Favourite_Dailymotions_media();
-			
+			Thread.sleep(6000);
 			favu.Favourite_Vimeo_media();
-			
+			Thread.sleep(6000);
 			favu.Favourite_soundcloud_media();
+			Thread.sleep(6000);
 			test.log(Status.PASS, " -------- --- The Favourite feeds loaded successfully ------------");
 			 
 		}  

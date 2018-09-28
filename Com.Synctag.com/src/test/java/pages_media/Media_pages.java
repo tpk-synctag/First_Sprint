@@ -26,7 +26,7 @@ public class Media_pages
 
 	@FindBy(xpath="//*[@id='header']/div[1]/div[2]/div[4]/ul/li[4]")WebElement click_media ;     
 	
-	@FindBy(xpath="//*[@id=\"header\"]/div[1]/div[2]/div[3]/ul/li/a") WebElement click_dropdown ;
+	@FindBy(xpath="//a[@class='dropdown-toggle navbar-user-name cursor_pointer']") WebElement click_dropdown ;
 	
 	@FindBy(xpath="//*[@id='header']/div[1]/div[2]/div[3]/ul/li/ul/li[2]") WebElement select_Manageaddaccount ;
 	

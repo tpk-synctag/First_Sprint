@@ -1,57 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="9" passed="9">
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="973231" started-at="2018-09-27T05:16:08Z" finished-at="2018-09-27T05:32:21Z">
+  <suite name="Default suite" duration-ms="452293" started-at="2018-09-28T07:22:53Z" finished-at="2018-09-28T07:30:25Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="973231" started-at="2018-09-27T05:16:08Z" finished-at="2018-09-27T05:32:21Z">
-      <class name="testcase_SocialAfter_account_added.SocialUSermode_after_added_Accounts">
-        <test-method status="PASS" signature="setUP()[pri:0, instance:testcase_SocialAfter_account_added.SocialUSermode_after_added_Accounts@56ac3a89]" name="setUP" is-config="true" duration-ms="10874" started-at="2018-09-27T05:16:08Z" finished-at="2018-09-27T05:16:19Z">
+    <test name="Default test" duration-ms="452293" started-at="2018-09-28T07:22:53Z" finished-at="2018-09-28T07:30:25Z">
+      <class name="testcase_media.Verify_Media_with_Reports">
+        <test-method status="PASS" signature="setUP()[pri:0, instance:testcase_media.Verify_Media_with_Reports@490ab905]" name="setUP" is-config="true" duration-ms="16040" started-at="2018-09-28T07:22:53Z" finished-at="2018-09-28T07:23:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUP -->
-        <test-method status="PASS" signature="logintosynctag()[pri:1, instance:testcase_SocialAfter_account_added.SocialUSermode_after_added_Accounts@56ac3a89]" name="logintosynctag" duration-ms="25421" started-at="2018-09-27T05:16:19Z" finished-at="2018-09-27T05:16:44Z">
+        <test-method status="PASS" signature="verify_Media_account()[pri:1, instance:testcase_media.Verify_Media_with_Reports@490ab905]" name="verify_Media_account" duration-ms="27686" started-at="2018-09-28T07:23:09Z" finished-at="2018-09-28T07:23:37Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logintosynctag -->
-        <test-method status="PASS" signature="homefeeds()[pri:2, instance:testcase_SocialAfter_account_added.SocialUSermode_after_added_Accounts@56ac3a89]" name="homefeeds" duration-ms="146458" started-at="2018-09-27T05:16:44Z" finished-at="2018-09-27T05:19:11Z">
+        </test-method> <!-- verify_Media_account -->
+        <test-method status="PASS" signature="Moving_Media_module()[pri:2, instance:testcase_media.Verify_Media_with_Reports@490ab905]" name="Moving_Media_module" duration-ms="43015" started-at="2018-09-28T07:23:37Z" finished-at="2018-09-28T07:24:20Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- homefeeds -->
-        <test-method status="PASS" signature="friendsandfollowers()[pri:3, instance:testcase_SocialAfter_account_added.SocialUSermode_after_added_Accounts@56ac3a89]" name="friendsandfollowers" duration-ms="146807" started-at="2018-09-27T05:19:11Z" finished-at="2018-09-27T05:21:38Z">
+        </test-method> <!-- Moving_Media_module -->
+        <test-method status="PASS" signature="add_youtube_account()[pri:3, instance:testcase_media.Verify_Media_with_Reports@490ab905]" name="add_youtube_account" duration-ms="51817" started-at="2018-09-28T07:24:20Z" finished-at="2018-09-28T07:25:12Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- friendsandfollowers -->
-        <test-method status="PASS" signature="timeline()[pri:4, instance:testcase_SocialAfter_account_added.SocialUSermode_after_added_Accounts@56ac3a89]" name="timeline" duration-ms="437306" started-at="2018-09-27T05:21:38Z" finished-at="2018-09-27T05:28:55Z">
+        </test-method> <!-- add_youtube_account -->
+        <test-method status="PASS" signature="add_dailymotions_account()[pri:4, instance:testcase_media.Verify_Media_with_Reports@490ab905]" name="add_dailymotions_account" duration-ms="23374" started-at="2018-09-28T07:25:12Z" finished-at="2018-09-28T07:25:35Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- timeline -->
-        <test-method status="PASS" signature="queue()[pri:5, instance:testcase_SocialAfter_account_added.SocialUSermode_after_added_Accounts@56ac3a89]" name="queue" duration-ms="89236" started-at="2018-09-27T05:28:55Z" finished-at="2018-09-27T05:30:24Z">
+        </test-method> <!-- add_dailymotions_account -->
+        <test-method status="PASS" signature="add_vime0_account()[pri:5, instance:testcase_media.Verify_Media_with_Reports@490ab905]" name="add_vime0_account" duration-ms="36324" started-at="2018-09-28T07:25:35Z" finished-at="2018-09-28T07:26:11Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- queue -->
-        <test-method status="PASS" signature="mailbox()[pri:6, instance:testcase_SocialAfter_account_added.SocialUSermode_after_added_Accounts@56ac3a89]" name="mailbox" duration-ms="44234" started-at="2018-09-27T05:30:24Z" finished-at="2018-09-27T05:31:08Z">
+        </test-method> <!-- add_vime0_account -->
+        <test-method status="PASS" signature="UserHomeFeeds_account()[pri:7, instance:testcase_media.Verify_Media_with_Reports@490ab905]" name="UserHomeFeeds_account" duration-ms="117745" started-at="2018-09-28T07:26:11Z" finished-at="2018-09-28T07:28:09Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- mailbox -->
-        <test-method status="PASS" signature="mentions()[pri:7, instance:testcase_SocialAfter_account_added.SocialUSermode_after_added_Accounts@56ac3a89]" name="mentions" duration-ms="43658" started-at="2018-09-27T05:31:08Z" finished-at="2018-09-27T05:31:52Z">
+        </test-method> <!-- UserHomeFeeds_account -->
+        <test-method status="PASS" signature="Favourite_Feeds()[pri:8, instance:testcase_media.Verify_Media_with_Reports@490ab905]" name="Favourite_Feeds" duration-ms="134277" started-at="2018-09-28T07:28:09Z" finished-at="2018-09-28T07:30:23Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- mentions -->
-        <test-method status="PASS" signature="xlporer()[pri:8, instance:testcase_SocialAfter_account_added.SocialUSermode_after_added_Accounts@56ac3a89]" name="xlporer" duration-ms="26743" started-at="2018-09-27T05:31:52Z" finished-at="2018-09-27T05:32:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- xlporer -->
-        <test-method status="PASS" signature="archive()[pri:9, instance:testcase_SocialAfter_account_added.SocialUSermode_after_added_Accounts@56ac3a89]" name="archive" duration-ms="335" started-at="2018-09-27T05:32:19Z" finished-at="2018-09-27T05:32:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- archive -->
-        <test-method status="PASS" signature="closeApplicationbrwoser()[pri:0, instance:testcase_SocialAfter_account_added.SocialUSermode_after_added_Accounts@56ac3a89]" name="closeApplicationbrwoser" is-config="true" duration-ms="1934" started-at="2018-09-27T05:32:19Z" finished-at="2018-09-27T05:32:21Z">
+        </test-method> <!-- Favourite_Feeds -->
+        <test-method status="PASS" signature="closeApplicationbrwoser()[pri:0, instance:testcase_media.Verify_Media_with_Reports@490ab905]" name="closeApplicationbrwoser" is-config="true" duration-ms="1888" started-at="2018-09-28T07:30:23Z" finished-at="2018-09-28T07:30:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplicationbrwoser -->
-      </class> <!-- testcase_SocialAfter_account_added.SocialUSermode_after_added_Accounts -->
+      </class> <!-- testcase_media.Verify_Media_with_Reports -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
