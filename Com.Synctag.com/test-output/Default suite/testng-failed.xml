@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcase_media.Verify_Media_with_Reports">
+      <class name="testcase_SocialAfter_account_added.Samplecheck">
         <methods>
-          <include name="closeApplicationbrwoser"/>
-          <include name="verify_Media_account"/>
           <include name="setUP"/>
+          <include name="logintosynctag"/>
+          <include name="closeApplicationbrwoser"/>
         </methods>
-      </class> <!-- testcase_media.Verify_Media_with_Reports -->
+      </class> <!-- testcase_SocialAfter_account_added.Samplecheck -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

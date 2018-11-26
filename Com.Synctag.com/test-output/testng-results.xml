@@ -1,49 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="452293" started-at="2018-09-28T07:22:53Z" finished-at="2018-09-28T07:30:25Z">
+  <suite name="Default suite" duration-ms="47374" started-at="2018-10-10T06:39:22Z" finished-at="2018-10-10T06:40:10Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="452293" started-at="2018-09-28T07:22:53Z" finished-at="2018-09-28T07:30:25Z">
-      <class name="testcase_media.Verify_Media_with_Reports">
-        <test-method status="PASS" signature="setUP()[pri:0, instance:testcase_media.Verify_Media_with_Reports@490ab905]" name="setUP" is-config="true" duration-ms="16040" started-at="2018-09-28T07:22:53Z" finished-at="2018-09-28T07:23:09Z">
+    <test name="Default test" duration-ms="47374" started-at="2018-10-10T06:39:22Z" finished-at="2018-10-10T06:40:10Z">
+      <class name="testcase_SocialAfter_account_added.Samplecheck">
+        <test-method status="PASS" signature="setUP()[pri:0, instance:testcase_SocialAfter_account_added.Samplecheck@72d818d1]" name="setUP" is-config="true" duration-ms="15645" started-at="2018-10-10T06:39:22Z" finished-at="2018-10-10T06:39:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUP -->
-        <test-method status="PASS" signature="verify_Media_account()[pri:1, instance:testcase_media.Verify_Media_with_Reports@490ab905]" name="verify_Media_account" duration-ms="27686" started-at="2018-09-28T07:23:09Z" finished-at="2018-09-28T07:23:37Z">
+        <test-method status="PASS" signature="logintosynctag()[pri:1, instance:testcase_SocialAfter_account_added.Samplecheck@72d818d1]" name="logintosynctag" duration-ms="31504" started-at="2018-10-10T06:39:38Z" finished-at="2018-10-10T06:40:10Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_Media_account -->
-        <test-method status="PASS" signature="Moving_Media_module()[pri:2, instance:testcase_media.Verify_Media_with_Reports@490ab905]" name="Moving_Media_module" duration-ms="43015" started-at="2018-09-28T07:23:37Z" finished-at="2018-09-28T07:24:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Moving_Media_module -->
-        <test-method status="PASS" signature="add_youtube_account()[pri:3, instance:testcase_media.Verify_Media_with_Reports@490ab905]" name="add_youtube_account" duration-ms="51817" started-at="2018-09-28T07:24:20Z" finished-at="2018-09-28T07:25:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- add_youtube_account -->
-        <test-method status="PASS" signature="add_dailymotions_account()[pri:4, instance:testcase_media.Verify_Media_with_Reports@490ab905]" name="add_dailymotions_account" duration-ms="23374" started-at="2018-09-28T07:25:12Z" finished-at="2018-09-28T07:25:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- add_dailymotions_account -->
-        <test-method status="PASS" signature="add_vime0_account()[pri:5, instance:testcase_media.Verify_Media_with_Reports@490ab905]" name="add_vime0_account" duration-ms="36324" started-at="2018-09-28T07:25:35Z" finished-at="2018-09-28T07:26:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- add_vime0_account -->
-        <test-method status="PASS" signature="UserHomeFeeds_account()[pri:7, instance:testcase_media.Verify_Media_with_Reports@490ab905]" name="UserHomeFeeds_account" duration-ms="117745" started-at="2018-09-28T07:26:11Z" finished-at="2018-09-28T07:28:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- UserHomeFeeds_account -->
-        <test-method status="PASS" signature="Favourite_Feeds()[pri:8, instance:testcase_media.Verify_Media_with_Reports@490ab905]" name="Favourite_Feeds" duration-ms="134277" started-at="2018-09-28T07:28:09Z" finished-at="2018-09-28T07:30:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Favourite_Feeds -->
-        <test-method status="PASS" signature="closeApplicationbrwoser()[pri:0, instance:testcase_media.Verify_Media_with_Reports@490ab905]" name="closeApplicationbrwoser" is-config="true" duration-ms="1888" started-at="2018-09-28T07:30:23Z" finished-at="2018-09-28T07:30:25Z">
+        </test-method> <!-- logintosynctag -->
+        <test-method status="FAIL" signature="closeApplicationbrwoser(org.testng.ITestResult)[pri:0, instance:testcase_SocialAfter_account_added.Samplecheck@72d818d1]" name="closeApplicationbrwoser" is-config="true" duration-ms="0" started-at="2018-10-10T06:40:10Z" finished-at="2018-10-10T06:40:10Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Can inject only one of <ITestContext, XmlTest> into a @AfterClass annotated closeApplicationbrwoser.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Can inject only one of <ITestContext, XmlTest> into a @AfterClass annotated closeApplicationbrwoser.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:407)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:635)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:214)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplicationbrwoser -->
-      </class> <!-- testcase_media.Verify_Media_with_Reports -->
+      </class> <!-- testcase_SocialAfter_account_added.Samplecheck -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
