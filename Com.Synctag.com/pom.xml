@@ -80,7 +80,7 @@
         <configuration>
         
           <suiteXmlFiles>
-            <suiteXmlFile>SocialUserMode.xml</suiteXmlFile>
+            <suiteXmlFile>three_module.xmlthree_module.xml</suiteXmlFile>
           </suiteXmlFiles>
           
         </configuration>
